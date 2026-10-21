@@ -2,7 +2,22 @@
 :root{--bg:#f1f3ef;--panel:#fff;--ink:#25332a;--muted:#728076;--line:#dce4da;--accent:#62856c;--soft:#e7efe6}*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC",sans-serif;color:var(--ink)}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.shell{height:100dvh;display:grid;grid-template-columns:245px 290px minmax(0,1fr);overflow:hidden}.sidebar{background:#e9eee7;border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0}.logo{padding:21px 18px 13px;font-size:23px;font-weight:800;letter-spacing:-.6px}.logo span{color:var(--accent)}.searchbox{padding:0 12px 10px}.searchbox input{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:11px;background:#fff;color:var(--ink);font-size:13px}.sidehead{padding:9px 18px;font-size:11px;color:var(--muted);font-weight:700;letter-spacing:1px}.categories{overflow:auto;flex:1;padding:0 9px 15px}.category{display:flex;justify-content:space-between;align-items:center;width:100%;padding:12px 13px;margin:2px 0;border:0;border-radius:10px;background:transparent;text-align:left;color:var(--ink);font-size:14px}.category.active{background:#fff;font-weight:750;box-shadow:0 2px 10px #273d2810}.category .count{color:var(--muted);font-size:11px}.details{overflow:auto;background:var(--panel);border-right:1px solid var(--line);padding:0 18px 25px}.details .heading{position:sticky;top:0;background:var(--panel);padding:23px 0 14px;border-bottom:1px solid var(--line);z-index:1}.heading small{font-size:11px;color:var(--accent);font-weight:800;letter-spacing:1.1px}.heading h2{font-size:22px;margin:8px 0 3px}.heading p{font-size:12px;color:var(--muted);margin:0}.item{border-bottom:1px solid var(--line)}.itembtn{width:100%;border:0;background:transparent;text-align:left;padding:15px 1px;display:flex;justify-content:space-between;gap:8px;align-items:center;color:var(--ink)}.itembtn strong{font-size:14px;font-weight:650}.itembtn small{display:block;font-size:11px;color:var(--muted);margin-top:4px}.itembtn .chev{color:var(--muted);transition:transform .2s}.item.open .chev{transform:rotate(90deg)}.itembody{padding:0 0 18px;font-size:13px;line-height:1.8;color:var(--muted)}.itembody p{margin:0 0 12px}.sliderline{display:flex;justify-content:space-between;color:var(--ink);font-size:12px;margin:9px 0 4px}.itembody input[type=range]{width:100%;accent-color:var(--accent)}.hint{background:var(--soft);border-radius:9px;padding:10px;font-size:11px;margin-top:12px}.main{min-width:0;display:flex;flex-direction:column;padding:20px 24px;gap:14px}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.toolbar h1{font-size:20px;margin:0}.toolbar .sub{font-size:12px;color:var(--muted);margin-top:4px}.tools{display:flex;gap:7px;flex-wrap:wrap}.btn{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:10px;padding:9px 12px;font-size:12px}.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}.canvaswrap{background:#fff;border:1px solid var(--line);border-radius:17px;padding:12px;flex:1;display:flex;flex-direction:column;min-height:190px;box-shadow:0 6px 30px #1e351a0a}.canvashead{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:0 0 10px;font-size:12px;color:var(--muted)}#canvas{width:100%;height:100%;flex:1;display:block;min-height:160px;background:#fffdf9;border-radius:11px;touch-action:none;cursor:crosshair;border:1px solid #e8ece5}.bottom{display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:#fff;padding:12px;border:1px solid var(--line);border-radius:14px}.bottom label{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted)}.bottom input[type=range]{width:105px;accent-color:var(--accent)}.bottom input[type=color]{width:35px;height:32px;border:0;background:none}.presets{display:flex;gap:7px;overflow:auto;padding-bottom:3px}.preset{white-space:nowrap;border:1px solid var(--line);background:#fff;border-radius:9px;padding:9px 12px;color:var(--ink);font-size:12px}.status{font-size:11px;color:var(--muted)}.empty{padding:20px 6px;color:var(--muted);font-size:13px}.mobilebar{display:none}.menuSwitch{position:absolute;opacity:0;pointer-events:none}.menuCloseText{display:none}.menuSwitch:checked ~ .mobilebar .menuOpenText{display:none}.menuSwitch:checked ~ .mobilebar .menuCloseText{display:inline}body.dark{--bg:#1b231e;--panel:#28332b;--ink:#eef4ed;--muted:#a5b8a7;--line:#425146;--accent:#9ebda3;--soft:#35483a}body.dark .sidebar{background:#222d25}body.dark .category.active,body.dark .btn,body.dark .bottom,body.dark .preset,body.dark .canvaswrap,body.dark .searchbox input{background:var(--panel);color:var(--ink)}body.dark .btn.primary{background:#5b7f64;color:white}
 @media(max-width:850px){.shell{grid-template-columns:170px 240px minmax(0,1fr)}.main{padding:14px}.details{padding:0 12px 20px}.logo{font-size:19px;padding:18px 12px}.category{font-size:12px;padding:11px 8px}}
 @media(max-width:700px){.shell{display:flex;flex-direction:column;height:100dvh}.mobilebar{display:flex;align-items:center;justify-content:space-between;background:var(--panel);padding:10px 13px;border-bottom:1px solid var(--line);gap:7px}.mobilebar strong{font-size:17px}.mobilebar .btn{padding:7px 10px}.sidebar{display:none;position:absolute;top:54px;bottom:0;left:0;width:min(310px,87vw);z-index:20;box-shadow:15px 0 40px #0003}.sidebar.show,.menuSwitch:checked ~ .shell .sidebar{display:flex}.details{flex:none;height:45dvh;min-height:210px;overflow:auto;border-right:0;border-bottom:1px solid var(--line);padding:0 15px}.details .heading{padding:13px 0 9px}.heading h2{font-size:18px;margin:3px 0}.main{flex:1;min-height:0;padding:9px 12px;gap:8px}.toolbar{display:none}.canvaswrap{padding:7px;min-height:130px}.canvashead{margin-bottom:5px}.bottom{padding:8px;gap:7px}.bottom label{font-size:11px}.presets{gap:5px}.preset{padding:7px 9px}.status{display:none}}
-</style></head><body><input type="checkbox" id="menuSwitch" class="menuSwitch"><div class="mobilebar"><label class="btn" for="menuSwitch"><span class="menuOpenText">☰ 分類</span><span class="menuCloseText">✕ 關閉</span></label><strong>Brush <span style="color:var(--accent)">Lab</span></strong><div><button class="btn" id="mobileTheme">◐</button><button class="btn" id="mobileLang">EN / 中</button></div></div><div class="shell"><aside class="sidebar" id="sidebar"><div class="logo">✳ Brush <span>Lab</span></div><div class="searchbox"><input id="search" type="search" placeholder="搜尋筆刷參數…" aria-label="搜尋參數"></div><div class="sidehead">PROCREATE · 筆刷設定</div><div class="categories" id="categories"><div class="category">筆畫路徑</div><div class="category">穩定化</div><div class="category">錐化</div><div class="category">形狀</div><div class="category">紋路</div><div class="category">渲染</div><div class="category">濕混合</div><div class="category">顏色動態</div><div class="category">動態</div><div class="category">Apple Pencil</div><div class="category">屬性</div><div class="category">材質</div><div class="category">預覽</div><div class="category">關於這枝筆刷</div></div></aside><section class="details"><div class="heading"><small id="sectionEn">STROKE PATH</small><h2 id="sectionTitle">筆畫路徑</h2><p id="sectionDesc">點選下方設定，查看用途與可操作參數</p></div><div id="items"><p class="hint">如果這裡沒有參數，表示檔案預覽器沒有執行 JavaScript。請改用 Safari 開啟正式網站。</p></div></section><main class="main"><div class="toolbar"><div><h1>筆刷試畫區</h1><div class="sub">調整左側參數後，直接在畫布試畫</div></div><div class="tools"><button class="btn" id="theme">◐ 主題</button><button class="btn" id="lang">EN / 中</button><button class="btn" id="export">匯出 PNG</button></div></div><div class="canvaswrap"><div class="canvashead"><span>✎ 即時筆觸預覽</span><span id="activeSetting">間距 · 17%</span></div><canvas id="canvas"></canvas></div><div class="bottom"><label>顏色 <input type="color" id="color" value="#567e66"></label><label>大小 <input type="range" id="size" min="2" max="60" value="18"><span id="sizeValue">18</span></label><button class="btn" id="undo">復原</button><button class="btn" id="redo">重做</button><button class="btn" id="clear">清空</button><button class="btn" id="exportMobile">PNG</button></div><div class="presets" id="presets"></div><div class="status">此網站為獨立教學模擬，並非 Procreate 官方渲染引擎。未支援的設定只顯示說明，不會假裝影響畫布。</div></main></div><script>
+
+/* Teaching layout: the preview stays in normal flow on phones. */
+.shell{grid-template-columns:220px minmax(330px,1fr) minmax(320px,.9fr)}
+.details .heading{position:static}.itembody{color:var(--ink);font-size:14px}.itembody h3{font-size:13px;margin:18px 0 7px;color:var(--accent)}.itembody p{line-height:1.85}.comparison{margin:12px 0;background:var(--soft);padding:12px;border-radius:12px}.comparison figcaption{font-size:12px;margin-bottom:8px}.comparison svg{display:block;width:100%;height:auto;background:#fffdf9;border-radius:8px}.comparison .legend{display:flex;justify-content:space-between;font-size:12px;margin-top:8px}.previewToggle{display:flex;justify-content:space-between;align-items:center;width:100%;text-align:left;min-height:44px}.main.collapsed{gap:0}.main.collapsed .previewContent{display:none}.previewContent{display:flex;flex:1;min-height:0;flex-direction:column;gap:12px}.backdrop{display:none}.main{min-height:0;overflow:auto}.canvaswrap{flex:none;height:clamp(220px,45dvh,540px)}#canvas{flex:none;width:100%;height:calc(100% - 28px)}.sourceNote{font-size:12px;line-height:1.7;color:var(--muted)}button,label.btn{min-height:44px}.itembtn{min-height:56px}.itembtn[aria-expanded=true]{color:var(--accent)}
+@media(min-width:701px) and (max-width:1050px){.shell{grid-template-columns:180px minmax(0,1fr)}.main{grid-column:2;border-top:1px solid var(--line)}.sidebar{grid-row:1/3}.shell{grid-template-rows:minmax(220px,1fr) auto}.main.collapsed{padding:8px 14px}.previewContent{max-height:40dvh;overflow:auto}.canvaswrap{height:250px}}
+@media(max-width:700px){body{overflow:auto}.shell{height:auto;min-height:calc(100dvh - 65px);overflow:visible;display:flex}.mobilebar{position:sticky;top:0;z-index:30;padding-top:max(10px,env(safe-area-inset-top))}.sidebar{position:fixed;top:65px;bottom:0;z-index:40}.menuSwitch:checked ~ .backdrop{display:block;position:fixed;inset:65px 0 0;background:#0005;z-index:35}.details{height:auto;min-height:0;overflow:visible;flex:1;padding-bottom:24px}.main{flex:none;overflow:visible;padding:10px 12px max(12px,env(safe-area-inset-bottom));border-top:1px solid var(--line)}.main.collapsed{position:sticky;bottom:0;background:var(--bg);z-index:10}.previewContent{max-height:none}.canvaswrap{height:300px;min-height:0}.comparison svg{max-height:180px}.sourceNote{margin-top:12px}.details .heading{padding-top:18px}}
+
+.lessonComparison{margin:14px 0;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--soft)}
+.lessonComparison figcaption{font-weight:700;font-size:13px;margin-bottom:10px}.compareColumns{display:grid;grid-template-columns:1fr 1fr;gap:10px}.compareCase{background:var(--panel);padding:12px;border-radius:9px;min-width:0}.compareCase h4{margin:0 0 8px;font-size:13px;color:var(--accent)}.compareCase p{margin:0;font-size:13px}.lessonDiagram{display:block;width:100%;height:auto;background:#fffdf9;border-radius:8px;margin-bottom:12px}.lessonSteps{margin:0;padding-left:22px}.lessonSteps li{padding:4px 0}.languageNote{font-size:12px;color:var(--muted)}a{color:var(--accent)}
+@media(max-width:400px){.compareColumns{grid-template-columns:1fr}.compareCase{padding:10px}}
+/* The stage owns layout. Canvas bitmap dimensions must never size its parent. */
+.canvaswrap{display:grid;grid-template-rows:auto minmax(0,1fr);gap:10px;overflow:hidden;min-width:0}
+.canvashead{margin:0;min-width:0;flex-wrap:wrap}
+.canvasstage{position:relative;width:100%;height:100%;min-width:0;min-height:0;overflow:hidden}
+#canvas{position:absolute;inset:0;display:block;width:100%;height:100%;min-width:0;min-height:0;max-width:100%;max-height:100%}
+</style></head><body><input type="checkbox" id="menuSwitch" class="menuSwitch"><div class="mobilebar"><label class="btn" for="menuSwitch"><span class="menuOpenText">☰ 分類</span><span class="menuCloseText">✕ 關閉</span></label><strong>Brush <span style="color:var(--accent)">Lab</span></strong><div><button class="btn" id="mobileTheme">◐</button><button class="btn" id="mobileLang">EN / 中</button></div></div><label class="backdrop" for="menuSwitch" aria-label="關閉分類"></label><div class="shell"><aside class="sidebar" id="sidebar"><div class="logo">✳ Brush <span>Lab</span></div><div class="searchbox"><input id="search" type="search" placeholder="搜尋筆刷參數…" aria-label="搜尋參數"></div><div class="sidehead">PROCREATE · 筆刷設定</div><div class="categories" id="categories"><div class="category">筆畫路徑</div><div class="category">穩定化</div><div class="category">錐化</div><div class="category">形狀</div><div class="category">紋路</div><div class="category">渲染</div><div class="category">濕混合</div><div class="category">顏色動態</div><div class="category">動態</div><div class="category">Apple Pencil</div><div class="category">屬性</div><div class="category">材質</div><div class="category">預覽</div><div class="category">關於這枝筆刷</div></div></aside><section class="details"><div class="heading"><small id="sectionEn">STROKE PATH</small><h2 id="sectionTitle">筆畫路徑</h2><p id="sectionDesc">點選下方設定，查看用途與可操作參數</p></div><div id="items"><p class="hint">如果這裡沒有參數，表示檔案預覽器沒有執行 JavaScript。請改用 Safari 開啟正式網站。</p></div></section><main class="main" id="preview"><button class="btn previewToggle" id="previewToggle" aria-controls="previewContent" aria-expanded="true"><strong>✎ 即時預覽</strong><span id="previewState">收合 ▾</span></button><div class="previewContent" id="previewContent"><div class="toolbar"><div><h1>筆刷試畫區</h1><div class="sub">調整左側參數後，直接在畫布試畫</div></div><div class="tools"><button class="btn" id="theme">◐ 主題</button><button class="btn" id="lang">EN / 中</button><button class="btn" id="export">匯出 PNG</button></div></div><div class="canvaswrap"><div class="canvashead"><span>✎ 即時筆觸預覽</span><span id="activeSetting">間距 · 17%</span></div><div class="canvasstage" id="canvasStage"><canvas id="canvas"></canvas></div></div><div class="bottom"><label>顏色 <input type="color" id="color" value="#567e66"></label><label>大小 <input type="range" id="size" min="2" max="60" value="18"><span id="sizeValue">18</span></label><button class="btn" id="undo">復原</button><button class="btn" id="redo">重做</button><button class="btn" id="clear">清空</button><button class="btn" id="exportMobile">PNG</button></div><div class="presets" id="presets"></div><div class="status">Brush Lab 是獨立教學網站。試畫控制影響新筆畫；各參數的比較與練習可搭配 Procreate 操作。</div></div></main></div><script>
 const names=[['筆畫路徑','Stroke Path'],['穩定化','Stabilization'],['錐化','Taper'],['形狀','Shape'],['紋路','Grain'],['渲染','Rendering'],['濕混合','Wet Mix'],['顏色動態','Color Dynamics'],['動態','Dynamics'],['Apple Pencil','Apple Pencil'],['屬性','Properties'],['材質','Materials'],['預覽','Preview'],['關於這枝筆刷','About this Brush']];
 // The English names below are deliberately omitted when not verified against the 5.4 UI.
 const groups=[
@@ -21,23 +36,1134 @@ const groups=[
 [['預覽筆圖',null,'控制筆刷庫預覽筆圖。','Controls brush-library preview image.'],['使用浮水印預覽',null,'控制浮水印式預覽。','Controls watermark preview.'],['尺寸','Size','調整預覽的尺寸。','Changes preview size.'],['最小壓力',null,'調整預覽的最小壓力。','Changes preview minimum pressure.'],['壓力感應比例',null,'調整預覽中的壓力比例。','Changes preview pressure scale.'],['濕混合','Wet Mix','調整預覽濕混合行為。','Changes preview wet-mix behavior.'],['傾斜角度','Tilt Angle','調整預覽傾斜角度。','Changes preview tilt angle.']],
 [['筆刷名稱','Brush Name','設定筆刷名稱。','Names the brush.'],['製作者',null,'記錄筆刷製作者。','Stores brush author.'],['簽名','Signature','記錄筆刷簽名。','Stores brush signature.'],['建立重置點',null,'儲存目前設定快照。','Creates a settings restore point.'],['重置筆刷',null,'還原至已儲存的設定。','Restores saved brush settings.']]
 ];
-const supported={spacing:[0,100],spacingJitter:[0,100],lateral:[0,100],linear:[0,100],falloff:[0,100],streamline:[0,100],scatter:[0,100],count:[1,8],countJitter:[0,100],speedSize:[-100,100],speedOpacity:[-100,100],speedSpacing:[-100,100],sizeJitter:[0,100],opacityJitter:[0,100]};
+// Lessons describe Procreate concepts; the numerical canvas mapping is an approximation.
+const lessons={
+spacing:[
+['作用與原理','筆畫不是一條連續的實心線，而是筆尖形狀沿路徑重複蓋印。間距決定相鄰蓋印相隔多遠，通常以筆尖尺寸為基準；同一百分比下，筆尖越大，實際間隔也越大。'],
+['調低／調高','調低：蓋印緊密重疊，看起來較連續；調高：逐漸看見一顆顆筆尖。圓形筆尖在 100% 附近仍可能接觸，不一定出現大片空白。透明筆尖重疊也會改變濃淡。'],
+['繪畫用途與練習','勾線先試 2–10%；珠串、縫線或裝飾筆刷先試 60–100%。固定大小，慢慢畫一條直線，再快速畫一條；間距是按距離排列，不應只因手速或觸控事件變多就忽密忽疏。'],
+['常見問題','間距不等於筆刷大小，也不等於透明度。想要線條平滑，先降低間距；手震造成的歪曲則要看「穩定化」。本網站的百分比是教學近似值，並非 Procreate 引擎的逐像素重現。']],
+spacingJitter:[
+['作用與原理','在基礎間距上加入隨機變化，每一對相鄰蓋印的距離可能不同。它改變沿路徑的疏密，不會主動把筆尖移到路徑左右兩側。'],
+['調低／調高','0%：規律排列；調高：緊密與稀疏交錯。若基礎間距非常小，蓋印互相覆蓋，變化可能看不明顯。先把間距設為 70–90% 再觀察。'],
+['繪畫用途與練習','適合砂礫、種子與不規則裝飾。先畫間距固定的珠串，再提高抖動比較節奏；精準縫線與規則點線通常保持低值。'],
+['常見問題','間距抖動不是「橫向抖動」，也不是「線性抖動」。前者隨機選擇下一次蓋印的間隔；線性抖動則把既定位置沿前進方向移開，視覺上都可能變得疏密不均。']],
+lateral:[
+['作用與原理','把每次蓋印移到路徑左右兩側，偏移方向垂直於當地筆畫前進方向。畫水平線時偏移主要朝上下；畫垂直線時偏移主要朝左右。'],
+['調低／調高','0%：筆尖中心留在路徑上；調高：中心散到兩側，筆觸覆蓋範圍變寬。這是移動位置，不是放大每個筆尖。'],
+['繪畫用途與練習','用於草叢、星塵、噴濺與樹葉。先設間距 60%，畫水平和垂直兩條線，再提高橫向抖動；兩條線都應朝各自的兩側散開。'],
+['常見問題','「橫向」是相對於筆畫方向，不是固定的螢幕 X 軸。形狀中的「散佈」通常改變筆尖旋轉角度，並不等於把中心位置散開。']],
+linear:[
+['作用與原理','將蓋印中心沿筆畫前進方向前後移動。它保留路徑大致寬度，讓原本均勻的排列出現重疊或空隙。'],
+['調低／調高','0%：維持基礎位置；調高：前後偏移更大，排列節奏更不規則。與橫向抖動一起使用時，會同時向前後與兩側散開。'],
+['繪畫用途與練習','用於自然顆粒、粗糙線條和斷續紋理。先把橫向抖動歸零、間距設為 80%，畫直線，再增加線性抖動，觀察中心仍大致落在同一條路徑上。'],
+['常見問題','線性抖動不代表線條變直，也不是穩定化。它與間距抖動都會改變疏密，但控制的是位置偏移與間隔隨機化兩個不同步驟。']],
+falloff:[
+['作用與原理','讓單次筆畫隨著繪製距離逐漸淡出，像筆尖上的顏料慢慢耗盡；重新起筆會重新開始。這裡以透明度隨距離降低示意，不模擬完整顏料與紋理互動。'],
+['調低／調高','0%：沒有距離造成的退減；調高：在較短距離內淡出。淡到看不見後，繼續同一筆不會補回顏色，抬筆再畫才重新出現。'],
+['繪畫用途與練習','適合短促乾筆、鬍鬚或帶耗墨感的裝飾。先試 30%，一筆畫長線，再分成三次起筆；比較每一筆是否重新由濃變淡。想維持長線均勻就降低退減。'],
+['常見問題','退減主要看筆畫走過的距離，不是停留時間。它不同於錐化（起終點形狀）及濕混合的顏料量（顏料攜帶與混合）；本模擬的淡出距離不等同 Procreate 的數值標定。']]
+};
+const englishLessons={
+spacing:['Strokes consist of repeated tip stamps. Spacing sets their distance relative to tip size. Larger tips therefore have larger physical gaps at the same percentage.','Low values overlap into a continuous line; high values reveal individual stamps. At 100%, round stamps can still touch. Overlap also changes translucent paint density.','Try 2–10% for outlines and 60–100% for beads or decoration. Draw slowly and quickly: spacing should follow distance, rather than the number of pointer events.','Spacing is neither size nor opacity. Lower it for visible stamp gaps; use Stabilization for a shaky path. The numerical simulation is approximate.'],
+spacingJitter:['Randomizes the interval between consecutive stamps around the base spacing, without deliberately moving stamps to the sides.','0% is regular. Higher values mix dense and sparse intervals. Set base spacing to 70–90% first so overlap does not hide the effect.','Use for gravel, seeds and irregular decoration. Compare a regular bead line with a randomized line; keep this low for precise stitching.','Spacing jitter changes the next interval. Linear jitter shifts existing positions along the direction of travel. Both can look uneven but act at different stages.'],
+lateral:['Offsets stamp centers perpendicular to the local direction of travel: above/below a horizontal path and left/right of a vertical path.','0% keeps centers on the path. Higher values widen their distribution without enlarging individual stamps.','Try 60% spacing for grass, stars or foliage. Draw horizontal and vertical paths and observe the sideways spread relative to each path.','Lateral does not mean the screen X axis. Shape Scatter rotates tips, whereas lateral jitter moves their centers.'],
+linear:['Moves stamp centers forward or backward along the local path direction, creating overlaps and gaps without intentionally widening the path.','0% preserves base positions. Higher values increase displacement. Combine with lateral jitter to spread stamps in both directions.','For natural particles and broken textures, first set lateral jitter to zero and spacing to 80%, then increase linear jitter on a straight stroke.','Linear jitter does not straighten a line. Unlike spacing jitter, it offsets a stamp position rather than selecting the next interval.'],
+falloff:['Fades a stroke as drawing distance increases, resembling a dwindling paint supply. Lifting and starting a new stroke restarts it. This preview approximates the effect with opacity.','0% has no distance fade. Higher values fade over a shorter distance. Once invisible, continuing the same stroke does not refill it.','Try 30% for dry marks or short decorative strokes. Compare one long stroke against three separate strokes; every new stroke starts dark again.','Fall off follows distance rather than elapsed time. Taper controls stroke ends; Wet Mix Charge controls paint load and mixing. Preview distances are not calibrated to Procreate.']};
+function appendLesson(body,key){
+ const lesson=lessons[key];if(!lesson)return;
+ lesson.forEach(([title,content],i)=>{const h=document.createElement('h3'),p=document.createElement('p');h.textContent=txt(title,['How it works','Lower / higher','When to use it','Common confusion'][i]);p.textContent=txt(content,englishLessons[key][i]);body.append(h,p);if(i===1)body.append(comparison(key))});
+ const source=document.createElement('p');source.className='sourceNote';source.append(document.createTextNode(txt('參考：Procreate 筆刷工作室「筆畫路徑」。以 5.4.14 繁體中文介面為學習目標；圖解與試畫是概念示意。','Reference: Procreate Brush Studio · Stroke Path. Preview values are illustrative. ')));const a=document.createElement('a');a.href='https://help.procreate.com/procreate/handbook/brushes/brush-studio-settings';a.textContent=txt('官方筆刷設定手冊','Official brush settings handbook');a.target='_blank';a.rel='noopener noreferrer';source.append(a);body.append(source);
+}
+function comparison(key){
+ const figure=document.createElement('figure');figure.className='comparison';const caption=document.createElement('figcaption');caption.textContent=txt('低值／高值比較 · 其他設定固定（圓點為筆尖中心）','Low / high comparison · other settings fixed');figure.append(caption);
+ const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 320 130');svg.setAttribute('role','img');svg.setAttribute('aria-label',txt('上排低值、下排高值；虛線是繪畫路徑','Top: low; bottom: high. Dashed lines show the drawing path.'));
+ const random=randomizer(42);for(let row=0;row<2;row++){
+  const y=35+row*60,path=document.createElementNS(ns,'path');path.setAttribute('d',`M 15 ${y} H 305`);path.setAttribute('stroke','#9ca99d');path.setAttribute('stroke-dasharray','4 4');svg.append(path);
+  let x=20;while(x<302){let cx=x,cy=y,alpha=.8;if(row&&key==='lateral')cy+=(random()-.5)*42;if(row&&key==='linear')cx+=(random()-.5)*28;if(row&&key==='falloff')alpha=Math.max(0,1-(x-20)/230);
+   const dot=document.createElementNS(ns,'circle');dot.setAttribute('cx',cx);dot.setAttribute('cy',cy);dot.setAttribute('r','6');dot.setAttribute('fill','#567e66');dot.setAttribute('opacity',alpha);svg.append(dot);
+   x+=key==='spacing'?(row?24:5):key==='spacingJitter'&&row?8+random()*30:18;
+  }
+ }
+ figure.append(svg);const labels=document.createElement('div');labels.className='legend';labels.textContent=txt('上：低值／零抖動　　下：高值','Top: low / no jitter · Bottom: high');figure.append(labels);return figure;
+}
+
+
+function appendDetailedLesson(body,c,a){
+ const data=detailedLessons[c+':'+a[0]];if(!data)throw new Error('Missing lesson: '+c+':'+a[0]);
+ // Detailed lessons are authored in Traditional Chinese. Keep their language explicit in English UI.
+ const article=document.createElement('div');article.className='detailedLesson';article.lang='zh-Hant';
+ if(lang==='en'){const note=document.createElement('p');note.className='languageNote';note.textContent='Detailed walkthrough in Traditional Chinese';article.append(note)}
+ function section(title,text){const h=document.createElement('h3'),p=document.createElement('p');h.textContent=title;p.textContent=text;article.append(h,p)}
+ section('它到底控制什麼？',data[0]);
+ const figure=document.createElement('figure');figure.className='lessonComparison';
+ const caption=document.createElement('figcaption');caption.textContent='改變設定後，有什麼差別？';figure.append(caption);
+ const diagram=lessonDiagram(c,a[0]);if(diagram)figure.append(diagram);
+ const columns=document.createElement('div');columns.className='compareColumns';
+ for(let i=0;i<2;i++){const card=document.createElement('div');card.className='compareCase';const heading=document.createElement('h4'),p=document.createElement('p');heading.textContent=i?'對照 B':'對照 A';p.textContent=data[i+1];card.append(heading,p);columns.append(card)}
+ figure.append(columns);article.append(figure);
+ section('什麼時候用？照這樣試一次',data[3]);
+ section('最容易搞混的地方',data[4]);
+ const source=document.createElement('p');source.className='sourceNote';const link=document.createElement('a');link.href='https://help.procreate.com/procreate/handbook/brushes/brush-studio-settings';link.target='_blank';link.rel='noopener noreferrer';link.textContent='參考：Procreate 官方筆刷設定手冊';source.append(link);article.append(source);body.append(article);
+}
+function lessonDiagram(c,name){
+ let type=null;
+ if(c===1&&name!=='流線：壓力')type='smooth';
+ if(c===1&&name==='流線：壓力')type='smoothPressure';if(c===1&&name==='動態濾鏡：表達')type='expression';
+ if(c===2&&['壓力錐化','觸碰錐化','尺寸','透明度','筆尖'].includes(name))type=name==='透明度'?'fade':name==='筆尖'?'tip':'taper';
+ if(c===3){type=({'形狀來源':'source','旋轉':'rotation','散佈':'scatter','計數':'count','計數抖動':'countJitter','翻轉 X':'flipX','翻轉 Y':'flipY','圓度控制':'roundness','壓力圓度':'roundness','傾斜圓度':'roundness','圓度垂直抖動':'vertical','圓度水平抖動':'horizontal'})[name]||null}
+ if(c===4)type=({'比例':'grainScale','深度':'grainDepth','紋路縮放':'grainScale'})[name]||null;
+ if(c===5&&['阿爾法臨界值','臨界值量'].includes(name))type='threshold';
+ if(c===7)type='color';
+ if(c===8)type=name.includes('間距')?'spacing':name.includes('尺寸')?'width':'fade';
+ if(c===9&&name==='壓力曲線')type='curve';
+ if(!type)return null;
+ const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.classList.add('lessonDiagram');svg.setAttribute('viewBox','0 0 320 160');svg.setAttribute('role','img');
+ const description='概念圖：'+name+'。上方為對照 A，下方為對照 B；閱讀下方文字了解條件，圖形不是數值標定的實際渲染。';svg.setAttribute('aria-label',description);
+ function node(tag,attrs){const el=document.createElementNS(ns,tag);for(const [k,v]of Object.entries(attrs))el.setAttribute(k,v);svg.append(el);return el}
+ const title=document.createElementNS(ns,'title');title.textContent=description;svg.append(title);
+ node('text',{x:12,y:16,fill:'#25332a','font-size':11}).textContent='概念圖 · 上 A ／ 下 B';
+ const green='#567e66';
+ if(type==='curve'){
+  node('path',{d:'M 45 30 V 132 H 285',stroke:'#728076',fill:'none'});node('path',{d:'M 45 132 L 275 34',stroke:'#9ca99d','stroke-dasharray':'4 4',fill:'none'});node('path',{d:'M 45 132 Q 70 35 275 34',stroke:green,'stroke-width':3,fill:'none'});node('text',{x:95,y:150,fill:'#25332a','font-size':11}).textContent='橫：實際力道　縱：輸出壓力';return svg;
+ }
+ for(let row=0;row<2;row++){
+  const y=52+row*70;node('text',{x:10,y:y+4,fill:'#25332a','font-size':12}).textContent=row?'B':'A';
+  if(type==='smooth'||type==='expression'){
+   const path=(type==='expression'?!row:row)?'M 38 55 Q 150 8 296 54':'M 38 55 L 62 42 L 76 48 L 92 32 L 109 39 L 128 25 L 147 32 L 169 24 L 188 35 L 208 30 L 230 45 L 252 37 L 275 52 L 296 48';
+   node('path',{d:path,transform:`translate(0 ${row*70})`,stroke:green,'stroke-width':5,fill:'none','stroke-linecap':'round'});continue;
+  }
+  if(type==='tip'){node('path',{d:row?`M 38 ${y-8} H 280 Q 296 ${y} 280 ${y+8} H 38 Z`:`M 38 ${y-10} Q 200 ${y-10} 296 ${y} Q 200 ${y+10} 38 ${y+10} Z`,fill:green});continue}
+  if(type==='taper'){node('path',{d:row?`M 38 ${y} Q 160 ${y-24} 296 ${y} Q 160 ${y+24} 38 ${y}`:`M 38 ${y-10} H 296 V ${y+10} H 38 Z`,fill:green});continue}
+  if(type==='width'||type==='smoothPressure'){for(let i=0;i<24;i++){const r=type==='smoothPressure'?(row?6+3*Math.sin(i/4):6+3*Math.sin(i/4)+(i%2?2:-2)):(row?10-i*.3:7);node('circle',{cx:40+i*10,cy:y,r,fill:green})}continue}
+  if(type==='fade'||type==='threshold'){
+   for(let i=0;i<24;i++){const opacity=1-i/24;node('rect',{x:38+i*10,y:y-10,width:11,height:20,fill:green,opacity:type==='threshold'?(name==='臨界值量'?(opacity>(row?.7:.15)?1:0):row?(opacity>.5?1:0):opacity):row?opacity:1})}continue;
+  }
+  if(type==='grainScale'||type==='grainDepth'){
+   node('rect',{x:38,y:y-20,width:258,height:40,rx:6,fill:'#d8e4d6'});let step=type==='grainScale'&&row?19:9;
+   for(let x=43;x<290;x+=step)for(let yy=y-13;yy<y+17;yy+=step)node('circle',{cx:x,cy:yy,r:type==='grainScale'&&row?4:2,fill:green,opacity:type==='grainDepth'?(row?.9:.2):.8});continue;
+  }
+  if(type==='color'){
+   const component=name.split('：')[1],strokeMode=name.startsWith('筆畫'),controlled=!name.includes('抖動');
+   for(let i=0;i<16;i++){const t=row?(controlled?i/15:((strokeMode?Math.floor(i/5):i)*7%11)/10):.1;let fill=component==='色相'?`hsl(${22+t*240} 70% 48%)`:component==='飽和度'?`hsl(15 ${90-t*80}% 48%)`:component==='暗度'?`hsl(15 70% ${50-t*45}%)`:component==='亮度'?`hsl(15 70% ${48+t*45}%)`:`hsl(${50-t*48} 80% 50%)`;node('circle',{cx:43+i*16.5,cy:y,r:6,fill})}continue;
+  }
+  for(let i=0;i<9;i++){
+   let x=45+i*29,rx=7,ry=7;
+   if(type==='spacing'&&row)x=42+i*34;
+   if(['roundness','vertical'].includes(type)&&row)ry=type==='vertical'?3+(i%3)*2:3;
+   if(type==='horizontal'&&row)rx=3+(i%3)*2;
+   if(type==='count'||type==='countJitter'){
+    const count=row?(type==='count'?4:1+i%4):(type==='countJitter'?4:1);
+    for(let n=0;n<count;n++)node('ellipse',{cx:x,cy:y,rx:9,ry:3,fill:green,opacity:.6,transform:`rotate(${n*42} ${x} ${y})`});continue;
+   }
+   if(['source','scatter','rotation','flipX','flipY'].includes(type)){
+    if(type==='source'&&!row){node('circle',{cx:x,cy:y,r:7,fill:green});continue}
+    const angle=type==='scatter'&&row?i*73:type==='rotation'&&row?i*15:0;
+    const g=node('g',{transform:`translate(${x} ${y}) rotate(${angle}) scale(${type==='flipX'&&row?-1:1} ${type==='flipY'&&row?-1:1})`});
+    const leaf=document.createElementNS(ns,'path');leaf.setAttribute('d','M -9 6 Q -12 -13 9 -7 Q 11 3 -9 6');leaf.setAttribute('fill',green);g.append(leaf);continue;
+   }
+   node('ellipse',{cx:x,cy:y,rx,ry,fill:green});
+  }
+ }
+ return svg;
+}
+
+const detailedLessons={
+  "1:流線：量": [
+    "把手繪路徑中細小的左右晃動平順化。想像有人幫你把顫抖的線整理成較流暢的曲線；它整理的是位置，不會替你決定要畫什麼形狀。",
+    "低值保留原始手勢，短小轉折與手震都比較明顯。",
+    "高值讓曲線更順，但急轉彎可能被帶圓，筆觸也可能感覺跟手較慢。",
+    "畫三次相同的 S 曲線：原值、約 30%、約 70%。勾線先從中低值試起；畫毛髮時降低，以免小轉折被吃掉。",
+    "流線不會修正筆尖蓋印之間的空隙；線條像珠串時應先調低「筆畫路徑 → 間距」。"
+  ],
+  "1:流線：壓力": [
+    "整理一筆之內輕壓、重壓的變化，讓粗細或濃淡不會因細小筆壓起伏而突然跳動。只有筆刷本來有設定筆壓反應時，才容易觀察差別。",
+    "筆壓一變，線寬或濃淡就較快反應，保留更多細節。",
+    "輕重變化過渡更長、更柔和，但快速收筆可能不如低值靈敏。",
+    "在 Procreate 選一枝會隨筆壓變粗的筆，畫「輕 → 重 → 輕」的長線。若線寬忽粗忽細，可逐步增加此值。",
+    "它平滑的是壓力訊號，不是路徑位置。手指沒有 Apple Pencil 的筆壓輸入，不能靠這項憑空產生筆壓。"
+  ],
+  "1:穩定化：量": [
+    "把連續的路徑位置加以平均，降低抖動造成的偏移。相較於直接跟著每個手勢走，它會把一段移動整理成較穩定的線。",
+    "較貼近手的原始軌跡，細節多，但震動也容易留下。",
+    "線更穩、更直，速度快時平滑感通常更明顯；太高會削弱刻意的小彎折。",
+    "畫慢速與快速的長弧線，再畫鋸齒。若弧線改善但鋸齒變圓，就降低用量；適合輪廓長線，不一定適合速寫。",
+    "穩定化不是幾何直線工具，畫圓也不會自動成為正圓；它也不等於只改變壓力的「流線：壓力」。"
+  ],
+  "1:動態濾鏡：量": [
+    "降低手勢中突出的抖動與不規則偏移，讓路徑較平順。可把它理解為抑制不想要的小突起，而不是把每個突起都平均成另一條波浪。",
+    "保留較多手勢起伏，線條自然但可能不穩。",
+    "小突起減少，慢畫也能較平滑；太高時表情細節可能一併消失。",
+    "慢慢畫有波浪的長線，再用較高值重畫；觀察小震動消失多少，以及想保留的大彎曲是否還在。",
+    "它與穩定化使用不同的路徑處理方式，不必兩個都開到最大。先只調一項，才能知道哪個幫助了你。"
+  ],
+  "1:動態濾鏡：表達": [
+    "在動態濾鏡平滑路徑的同時，保留一些手繪起伏與個性。這項要和「動態濾鏡：量」一起理解，單獨看沒有意義。",
+    "線條較服從濾鏡整理，結果更整齊。",
+    "允許更多有意的起伏留下，較有手寫感；濾鏡量很高時，能保留的變化仍有限。",
+    "先把動態濾鏡量設為中等，再比較表達低、高兩次的簽名字跡。選擇能消除手震又不失字形個性的組合。",
+    "表達不是「增加隨機抖動」：它保留你的手勢，不是替筆刷額外製造雜訊。"
+  ],
+  "2:壓力錐化": [
+    "替 Apple Pencil 筆畫的起點或終點增加漸細、漸淡的區段。兩端控制點決定影響多長一段；尺寸、透明度等選項再決定這段怎麼改變。",
+    "錐化區段短時，大部分筆畫維持原本寬度，只在很靠近端點處收尖。",
+    "把端點往中間拉，漸變範圍變長，線條像長長收筆的毛筆。",
+    "在 Procreate 畫長短相近的三條線，只增加尾端錐化長度，觀察尾端由粗變細的位置；適合睫毛與書寫收筆。",
+    "錐化長度與錐化尺寸不同：前者決定「改變多久」，後者決定「變細多少」。也不要把它當成濕混合的耗墨。"
+  ],
+  "2:觸碰錐化": [
+    "替手指筆畫人工安排起點、終點的漸細或漸淡。因手指沒有 Apple Pencil 式的壓力訊號，需要用筆畫端點規則建立收尖效果。",
+    "短錐化只修飾線頭線尾，中段幾乎不變。",
+    "長錐化使更大一段筆畫逐漸變化，短線可能整條都受到影響。",
+    "用手指畫相同的短弧線，先只加尾端，再同時加兩端；可用來畫沒有筆壓的細葉與鬍鬚。",
+    "觸碰錐化不會讓螢幕感測手指力道。要比較它，請用手指而非 Apple Pencil 起筆。"
+  ],
+  "2:連接筆尖尺寸": [
+    "連動錐化圖左右兩端的控制，讓起筆與收筆使用相互配對的設定。這是端點連動開關，不是把筆刷的最大尺寸鎖住。",
+    "關閉後，可以做「圓頭起筆、長尖尾端」等不對稱效果。",
+    "開啟後，調整一端會帶動另一端，較容易維持對稱。",
+    "先關閉，只把尾端拉長，再開啟並移動其中一端；比較兩個控制點是否一起變。適合需要一致兩端的裝飾短線。",
+    "名稱容易讓人以為它會連接兩條線，實際上它處理的是同一筆的起終點設定。"
+  ],
+  "2:尺寸": [
+    "控制錐化區段的線寬變化程度。先設定錐化長度，再用這項決定從中段到端點要縮細多少。",
+    "尺寸錐化影響較少，端點較接近原本寬度。",
+    "端點更明顯縮細，容易形成尖尾。",
+    "保持錐化區段不變，只改尺寸：畫鬍鬚要看尖尾，畫圓頭記號則減少尺寸錐化。",
+    "不是整枝筆刷的大小。若想整條線都變粗，要調畫面側邊的筆刷尺寸，而非這裡。"
+  ],
+  "2:透明度": [
+    "控制錐化區段是否逐漸透出底色。它可以讓線尾淡掉，即使筆尖並沒有同時變窄。",
+    "透明度錐化少，線尾仍較實。",
+    "端點更明顯淡出，疊在底色上能看到底色透出。",
+    "先把尺寸錐化關小，只調透明度，畫一條線；再加入尺寸錐化，分辨「變淡」和「變細」。",
+    "淡出的線看起來可能像變細，因為邊緣較難看見；實際控制的是顏色遮住背景的程度。"
+  ],
+  "2:壓力": [
+    "調整壓力錐化如何接續 Apple Pencil 的輕重輸入，讓抬筆時的收尖更自然。需配合壓力錐化與筆刷本身的筆壓行為觀察。",
+    "較少依靠這個額外的壓力反應修飾收筆。",
+    "更強調筆壓變化與尾端收細之間的關係，抬筆的速度與力道會影響結果。",
+    "同一設定下，分別慢慢減壓與突然抬筆；比較尾端，再調整此項。適合想改善書寫收筆的人。",
+    "不是整體筆壓曲線。所有筆刷都太難壓粗，應另查全域壓力曲線，而不是只改錐化。"
+  ],
+  "2:筆尖": [
+    "控制錐化末端是細尖還是較厚鈍的形狀。可把它想成同一條漸細線，最後使用細毛尖或較粗的筆頭收尾。",
+    "末端較纖細、銳利。",
+    "末端較厚實、圓鈍，像粗筆尖結束的痕跡。",
+    "放大看相同短弧線的尾端：睫毛通常要細尖，厚重的筆觸則可以保留鈍感。",
+    "它不會更換「形狀來源」圖片，只調整錐化末端的外觀。"
+  ],
+  "2:筆尖動態": [
+    "控制繪畫時是否顯示錐化修飾的動態過程。這是觀看收筆呈現方式的開關，不是讓每顆筆尖隨機變形。",
+    "關閉時，不顯示該錐化動畫過程。",
+    "開啟時，可以看到系統套用錐化修飾時的視覺變化。",
+    "在 Procreate 畫完短線，觀察剛抬筆的瞬間，再切換此開關；依自己是否喜歡看到這段變化來選擇。",
+    "不要把它和「動態」分類中的尺寸抖動混在一起；這裡重點在錐化顯示的動畫。"
+  ],
+  "2:經典錐化": [
+    "使用較舊版本的錐化行為，方便舊筆刷維持熟悉的線尾表現。它是版本相容選項，並不是品質等級。",
+    "關閉使用目前版本的錐化處理。",
+    "開啟改採舊式處理，相同設定可能出現不同端點外觀。",
+    "先複製舊筆刷，用同樣的短線對照開關前後；只有想找回舊版手感時再考慮開啟。",
+    "「經典」不代表一定更自然，也不會自動修好所有不順的筆刷；間距與筆壓仍需各自檢查。"
+  ],
+  "3:形狀來源": [
+    "決定每次蓋印的外輪廓：圓形像圓印章，葉片圖片像葉片印章。筆畫是這個形狀沿路徑重複排列而成，紋路則位於形狀內部。",
+    "柔邊、簡單形狀重疊後容易形成連續筆觸。",
+    "尖角或不規則形狀會留下較明顯的輪廓特徵；這是來源選擇，不是數值高低。",
+    "在 Procreate 複製一枝筆刷，把間距加大後單點一下，再拖一筆，對照「一枚印章」與「一串印章」。",
+    "若圓形怎麼旋轉都一樣，是因為它旋轉對稱。要看散佈與方向，改用葉片或長橢圓比較清楚。"
+  ],
+  "3:輸入方式": [
+    "選擇由什麼訊號控制筆尖朝向：路徑移動、筆桿在螢幕上的傾斜方向，或支援裝置上的筆身側轉。它決定方向的來源。",
+    "僅觸碰主要依路徑與旋轉設定安排朝向。",
+    "方位角加入筆的朝向；方位角與側轉再加入筆身旋轉，後者需要 Apple Pencil Pro。",
+    "選長橢圓筆尖，畫直線時保持移動方向不變，再改變握筆朝向，觀察是否轉動。",
+    "這裡的觸碰不是只准手指畫畫；不要把選項名稱誤認為停用 Apple Pencil 的開關。"
+  ],
+  "3:僅觸碰功能": [
+    "以筆畫路徑與旋轉設定控制形狀行為，不加入方位角或側轉來決定方向。適合想讓葉片跟著你畫的路線走。",
+    "旋轉設為 0 時，形狀可以保持同一朝向。",
+    "旋轉設為跟隨筆畫時，轉彎處的形狀會跟著路徑轉。",
+    "用葉片形狀畫 U 字路徑，再比較旋轉 0 與跟隨筆畫；看葉片是否隨彎道轉向。",
+    "此項是輸入方式選擇，不是影響筆壓有無；壓力仍由其他相關設定決定。"
+  ],
+  "3:方位角": [
+    "使用筆桿傾斜時在螢幕平面上指向的方向控制筆尖。像拿扁筆畫線，轉換筆桿朝向就會改變扁頭角度。",
+    "筆桿指向固定時，形狀朝向較固定，即使路徑轉彎。",
+    "改變筆桿繞螢幕的指向時，筆尖可跟著轉；這不是單純把數值拉高。",
+    "保持畫直線，將筆桿由朝左改為朝上，使用非圓形筆尖觀察。適合扁筆與書法筆。",
+    "方位角是「往哪裡傾」，傾斜角是「有多躺平」，側轉則是繞筆身自轉，三者不同。"
+  ],
+  "3:方位角與側轉": [
+    "結合握筆朝向與筆身旋轉來控制形狀，像真的轉動扁筆或調整鑿形筆尖。筆身側轉需要支援的 Apple Pencil Pro。",
+    "筆身不旋轉時，可以先觀察方位角帶來的方向變化。",
+    "在相同路徑上轉動筆身，筆尖會出現額外的旋轉控制。",
+    "用長方形或葉片筆尖，手臂畫直線、手指慢慢轉筆桿；適合想精準擺放扁頭角度的筆刷。",
+    "不支援側轉的 Apple Pencil 不會因選了這項就多出感測器；通常只能使用可取得的方位角資訊。"
+  ],
+  "3:固定初始筆觸": [
+    "決定方向控制以每一筆起始時的姿態作為相對基準，還是保留落筆前已設定的絕對朝向。可搭配側轉與懸浮預覽理解。",
+    "關閉相對起筆基準時，可在落筆前轉動筆身，先選擇起始角度。",
+    "開啟相對基準時，每一筆從一致基準開始，之後的轉動再相對計算。",
+    "用葉片筆尖，先把筆轉向不同角度再各點一次，對照兩種模式的起始朝向。",
+    "它不會把整筆鎖死不准旋轉；它處理的是「從哪個方向開始計算」。"
+  ],
+  "3:旋轉": [
+    "控制形狀是否跟隨路徑轉彎。把形狀想成沿軌道行走的小箭頭：可以固定朝上，也可以沿軌道轉向。",
+    "0% 固定朝向；負向設定可讓旋轉呈反向關係。",
+    "正向增加時更跟隨筆畫方向，達跟隨筆畫端時轉彎也一起轉。",
+    "使用長橢圓或箭頭，畫一個 U；固定方向適合排印章，跟隨方向適合葉串與帶狀筆。",
+    "圓形沒有明顯方向，旋轉差別可能看不見；選了方位角時，也要留意方向控制可能由筆來主導。"
+  ],
+  "3:散佈": [
+    "讓每次蓋印的角度隨機轉動。中心可以仍在同一條線上，但每片葉子會面向不同角度。",
+    "低值角度較一致，重複排列容易辨識。",
+    "高值角度差異大，重複痕跡較不明顯。",
+    "把間距拉開，用葉片形狀畫一排；先比較方向整齊與方向隨機，再視需要加入橫向抖動。",
+    "散佈改變角度，橫向抖動才移動中心位置。圓形旋轉後仍是圓形，不能用它判斷散佈有沒有作用。"
+  ],
+  "3:計數": [
+    "在路徑的每一個蓋印位置，重複放下多枚形狀。它增加同一位置的印章數，不是增加整筆的長度。",
+    "1 次就是每個位置一枚。",
+    "次數增加後，一個位置可疊上多枚；搭配散佈或其他變化才容易分辨。",
+    "在 Procreate 用不規則形狀、加大間距，再比較計數 1 和 4；可做花叢、毛束或厚重的蓋印。",
+    "如果每枚都是同位置、同大小的全不透明圓，它們會完全重合，看起來仍只有一枚；不是數量就會自動往四周散開。"
+  ],
+  "3:計數抖動": [
+    "讓每個位置的蓋印次數在設定範圍內隨機變化。它以「計數」為上限，所以必須先把計數調到大於 1。",
+    "0% 每個位置都使用同一計數，例如每處都蓋 4 次。",
+    "高值會有些位置少蓋、有些多蓋；100% 可從 1 到設定的最大計數間變化。",
+    "先用計數 4、散佈較高的葉片筆刷，再增加計數抖動，觀察每束葉子的密度差。",
+    "計數為 1 時沒有可變範圍；完全重合的不透明形狀也可能把密度差藏起來。"
+  ],
+  "3:隨機化": [
+    "在每一筆開始時，隨機選一個形狀起始方向。它改變的是「這一筆從哪個角度開始」，而不是每顆印章都重新抽角度。",
+    "關閉後，多次起筆更容易維持同一初始朝向。",
+    "開啟後，多次起筆可能各自有不同初始角度。",
+    "用葉片單點十次，再畫三條短線，比較每筆第一枚葉片的方向；適合自然裝飾。",
+    "與散佈的差別在更新時機：隨機化按每筆起始，散佈按每次蓋印。"
+  ],
+  "3:翻轉 X": [
+    "將來源形狀左右鏡射，像把朝右的鳥變成朝左。圖案仍是同一張，但左右特徵交換。",
+    "關閉保留來源原方向。",
+    "開啟使用左右翻轉的形狀。",
+    "使用字母 F 或不對稱葉片來源，單點比較；適合把同一裝飾素材換方向。",
+    "圓形與左右對稱形狀看不出差別。翻轉不是旋轉 180 度，文字的上下位置不會交換。"
+  ],
+  "3:翻轉 Y": [
+    "將來源形狀上下鏡射，像把朝上的不對稱葉片倒過來。它改變來源的上下關係。",
+    "關閉保留原方向。",
+    "開啟上下對調，左右關係仍可保留。",
+    "使用上寬下窄的形狀單點比較；再與翻轉 X 分開測試，確認自己需要哪個方向。",
+    "若形狀上下對稱，看起來可能完全一樣。不要用完美圓形測試鏡射。"
+  ],
+  "3:圓度控制": [
+    "壓扁筆尖形狀，或調整其基礎角度。圓形可變成扁橢圓，形成類似扁頭筆的寬窄差。",
+    "接近圓形時，各方向的寬度較一致。",
+    "壓縮越強，長短軸差異越大；同一形狀沿不同方向畫會出現不同線寬。",
+    "先把圓壓成橢圓，固定角度後畫橫線與直線，比較寬度；可用於扁筆與書法。",
+    "圓度不等於整體尺寸：壓扁是在一個方向縮窄，不是每個方向一起縮小。"
+  ],
+  "3:壓力圓度": [
+    "用 Apple Pencil 的輕重變化控制形狀的壓扁程度。它影響長短軸比例，與單純把筆尖放大不同。",
+    "接近零時，圓度不太受輕重影響。",
+    "反應幅度增加時，輕重壓的扁圓差更明顯；方向需配合實際正負設定與曲線觀察。",
+    "用橢圓來源在原地輕點與重點，先只開圓度反應，再加入壓力尺寸比較。",
+    "重壓不一定只會讓線變粗；如果同時變扁，不同移動方向可能呈現不同寬度。"
+  ],
+  "3:傾斜圓度": [
+    "用筆桿直立或放斜的程度控制形狀壓縮。像讓扁頭隨握筆姿勢改變接觸形狀。",
+    "接近零時，放斜不太改變長短軸比例。",
+    "反應幅度增加，直立與斜放的形狀差異變大。",
+    "保持筆壓相近，分別直立與斜放單點，再畫平行短線；適合需要側鋒感的筆。",
+    "它改的是圓度；「傾斜：尺寸」則主要改大小，兩項同開會混合影響。"
+  ],
+  "3:圓度垂直抖動": [
+    "讓每枚形狀在自身垂直方向隨機壓縮，製造高矮不一致的印章。形狀中心不需要跟著移動。",
+    "0% 高度一致。",
+    "高值高度變化更大，有些較扁，有些較完整。",
+    "把間距加大、旋轉先固定，用葉片或橢圓觀察高矮差；適合不規則自然素材。",
+    "不是螢幕上下散開；那是位置抖動。筆尖旋轉後，壓縮軸也要相對形狀理解。"
+  ],
+  "3:圓度水平抖動": [
+    "讓每枚形狀在自身水平方向隨機壓縮，形成寬窄不一致的蓋印。",
+    "0% 寬度一致。",
+    "高值寬窄落差變大，可減少完全相同的重複感。",
+    "固定形狀角度，只增加水平圓度抖動；與垂直抖動分開試，才能看出是哪個軸在變。",
+    "它不會把中心向左或向右移，也不等於隨機縮放整張形狀。"
+  ],
+  "3:形狀過濾": [
+    "決定系統怎麼處理來源形狀的像素邊緣。所謂反鋸齒，就是讓像階梯的邊緣在顯示時較柔順。",
+    "無濾鏡較保留原始像素邊界，可能有鋸齒。",
+    "經典與加強濾鏡使用不同的邊緣平順處理，不是數值越高越好。",
+    "把同一枚斜邊印章放大觀察：像素風可保留硬邊，一般墨線則比較平順的選項。",
+    "過濾不是模糊整枝筆刷，也不能把解析度很低的來源變成真正高解析圖。"
+  ],
+  "4:紋路來源": [
+    "決定筆尖內部的顆粒、紙紋或凹凸圖樣。形狀決定外圍輪廓，紋路則像用同一個外框蓋在不同紙面上。",
+    "細緻來源可呈現密小顆粒，平滑來源則較均勻。",
+    "粗顆粒或高反差來源容易產生明顯破碎；這是圖片差異，不是數值高低。",
+    "保持形狀不變，分別換紙紋與石紋來源；在 Procreate 畫相同寬線，比較內部留白。",
+    "若完全看不出紋路，先檢查深度與來源對比，不要只放大筆刷尺寸。"
+  ],
+  "4:移動／紋理化": [
+    "決定內部紋理隨筆畫拖動，還是像固定的底紋被筆畫顯露。可想像「拖著顏料的刷子」與「在固定網版上塗色」兩種做法。",
+    "移動模式可產生拖曳、拉長的紋理感，並提供對應的移動選項。",
+    "紋理化模式偏向固定紋樣，反覆畫不同方向時圖樣較一致。",
+    "用格子或條紋來源，畫橫、直兩筆；想做織布或規律圖案可先試紋理化，傳統刷痕可先試移動。",
+    "這是模式選擇，不是強度。切換模式後，部分滑桿是否可用也可能跟著改變。"
+  ],
+  "4:移動模式": [
+    "在移動紋路中，決定圖樣比較像被拖著走，還是像滾輪連續印在畫布上。拖曳會讓紋理更拉長。",
+    "較多拖曳，圖案可能糊成刷痕。",
+    "較接近滾印，紋理細節較清楚，效果可接近紋理化。",
+    "用有方向的條紋畫長線，保持大小不變，只比較低、高值；適合調出乾刷拉絲或較清晰的顆粒。",
+    "圖案糊掉不一定是來源解析度低，也可能是紋路被刻意拖曳；先檢查這項再換圖。"
+  ],
+  "4:比例": [
+    "放大或縮小筆尖內部紋路的單元。像同一塊布，線織得密細或放大到能看見粗線，外框大小可以不變。",
+    "顆粒較小、重複較密，容易看起來細緻。",
+    "顆粒較大、重複較疏，內部圖樣更醒目。",
+    "固定筆刷尺寸，畫相同長度的寬線，比較線內能容下多少個顆粒；紙紋太像石頭時通常先縮小比例。",
+    "比例改的是紋路，不是外輪廓大小；也不是「縮放」對筆刷尺寸的連動方式。"
+  ],
+  "4:縮放": [
+    "決定改變筆刷尺寸時，紋路是否跟著放大。它處理「筆變粗後紙紋要不要也變粗」，不是單次圖樣的基本尺寸。",
+    "跟隨尺寸端：筆尖變大，紋路也一起變大。",
+    "裁切端：筆尖大小改變時，紋路本身尺寸較固定，較大的筆尖只是露出更多圖樣。",
+    "在移動模式中，用小筆和大筆各畫一條；想像真的紙張顆粒不變，可比較固定紋路尺寸的效果。",
+    "它不等於比例。先設定比例，再決定這個比例要不要跟著筆刷大小變化。"
+  ],
+  "4:旋轉": [
+    "控制紋路方向與筆畫轉彎的關係。外輪廓即使是圓形，內部木紋仍可能維持固定方向或跟著線條轉動。",
+    "0% 固定紋路方向；反向端讓方向以相反關係轉動。",
+    "跟隨筆畫端讓內部紋理隨路徑轉彎。",
+    "在移動模式選條紋來源，畫 U 形，比較轉彎處的紋理；適合長纖維與帶狀刷痕。",
+    "「形狀 → 旋轉」控制外框；這裡控制內部圖案。兩者可以各自有不同朝向。"
+  ],
+  "4:深度": [
+    "控制紋路對筆觸的影響強弱。像顏料是否明顯卡在粗紙的凸起上，形成深淺和留白。",
+    "低值紋理不明顯，較接近平滑底色。",
+    "高值顆粒的深淺差更明顯，可能更粗糙破碎。",
+    "固定來源與比例，在 Procreate 畫三條寬線比較；想做粉彩或粗紙鉛筆可逐漸增加。",
+    "深度不是 3D 模型的凹陷高度，也不等於全筆透明度；它主要改變紋理表現。"
+  ],
+  "4:最小深度": [
+    "替會變動的紋路深度設下限，避免某些筆壓或隨機狀態下紋理完全消失。要有深度變化，它才有可限制的範圍。",
+    "下限低時，紋路可以變得很淡。",
+    "下限高時，紋路即使減弱仍保留一定強度，變化範圍較窄。",
+    "在移動模式先啟用深度抖動，再比較最小深度 0 與較高值；適合不想讓顆粒突然變平滑的筆刷。",
+    "如果深度完全固定，調下限不一定看得出差別；先確認深度抖動或相關進階輸入有開。"
+  ],
+  "4:深度抖動": [
+    "讓紋路強弱在一筆中隨機變化，有時顆粒明顯，有時較接近底色。它變的是紋理強度，不是顆粒大小。",
+    "0% 深度較一致。",
+    "高值深淺起伏較大，筆畫可能有粗糙與平滑交錯的區段。",
+    "在移動模式用粗紙紋理畫長線，再增加抖動；可用最小深度限制最淡時仍要保留多少紋理。",
+    "不要同時把比例抖動、透明度抖動混在一起判斷；先固定其餘項目，確認改變的是紋路強度。"
+  ],
+  "4:偏差抖動": [
+    "讓每次起筆使用不同的紋路起始位置，避免每一筆都從同一顆顆粒或同一格圖案開始。",
+    "關閉時，重複起筆較容易對齊同一段圖樣。",
+    "開啟或提高時，起始圖樣位置更不一致，較自然。",
+    "用格線來源畫多條短線；裝飾圖案要銜接可降低，自然石紋要減少重複感則增加。",
+    "它主要改紋理的起始偏移，不是把整枚筆尖移離路徑，也不是每次更換來源圖片。"
+  ],
+  "4:混色模式": [
+    "決定紋路和筆刷底色如何計算出最後顏色。相同灰階來源可能在不同混色方式下產生不同的深淺或留白。",
+    "例如偏向加深的模式，會讓紋路暗部更影響底色。",
+    "偏向提亮的模式，會得到另一種亮部關係；這是模式選擇，沒有高低順序。",
+    "保持同一顏色、來源與深度，只切換模式，比較顆粒哪些地方變暗、哪些變亮。",
+    "這裡處理紋路與底色；「渲染 → 混色模式」處理整個筆觸與畫布，作用層級不同。"
+  ],
+  "4:亮度": [
+    "把來源紋理整體往較亮或較暗調整，改變圖樣中哪些部分容易出現在筆觸上。不是直接把所選顏色換成白色或黑色。",
+    "紋理整體較暗，實際顯露要看來源與混色模式。",
+    "紋理整體較亮，原本細節也可能因此被沖淡。",
+    "先看來源預覽，再畫同一條寬線；每次只小幅調整，找到留白與覆蓋的平衡。",
+    "因混色方式不同，不能一概說「亮度提高筆畫就一定更深」；要看實際使用的來源。"
+  ],
+  "4:對比": [
+    "拉大或縮小紋理亮部與暗部的差別。像把灰灰的紙紋變成較分明的黑白顆粒。",
+    "細節過渡柔和，紋理較不搶眼。",
+    "明暗分界更強，可能出現硬顆粒與較多破口。",
+    "想做柔和石墨先降低，想做顆粒乾刷再增加；放大觀察有沒有丟掉小細節。",
+    "對比不是銳利化，也不等於深度。對比改來源明暗關係，深度改紋理參與筆觸的強度。"
+  ],
+  "4:紋路濾鏡": [
+    "決定內部紋理縮放與顯示時如何平順像素邊緣。它影響顆粒邊界的硬或柔。",
+    "無濾鏡較保留像素輪廓，可能顯得鋸齒。",
+    "經典或加強濾鏡較平順，但細小高反差圖樣也可能改變觀感。",
+    "以同一細格紋理畫一條線並放大，比較圖案是否仍清楚；像素風可與一般繪畫分開選擇。",
+    "與「形狀過濾」處理的對象不同：一個在筆尖裡，一個在筆尖外輪廓。"
+  ],
+  "4:紋路跟隨照相機": [
+    "在 3D 繪畫中，決定紋理投放如何受觀看角度影響。轉動模型後繼續畫，圖樣可能沿用既有對應或依新視角改變。",
+    "關閉時較適合維持規則、可重複的圖案關係。",
+    "開啟時紋理依相機角度改變，旋轉物件後可能覆上不同位置的圖樣。",
+    "在 3D 測試物件上畫一小塊，再旋轉物件接著畫；比較接縫，磚牆與布料需求可能不同。",
+    "它不是讓 2D 畫布跟著手機鏡頭移動，也不會存取裝置相機拍照。"
+  ],
+  "4:自動重複": [
+    "把一張紋理照片加工成能連續平鋪的圖塊。目標是讓左右、上下接起來時，不會看見一格格明顯邊界。",
+    "原圖直接重複時，亮度差或邊線容易形成方格。",
+    "套用重複處理後，可利用重疊與混合減弱接縫；不是強度滑桿。",
+    "找一張光線均勻的紙紋，在 Procreate 紋路編輯器啟用此功能，看多格預覽有沒有直線接縫。",
+    "它不會自動去掉照片中的物件，也不能保證有大陰影的原圖立即無縫；來源品質仍重要。"
+  ],
+  "4:紋路縮放": [
+    "在自動重複編輯器內改變原始紋理在每個圖塊中的大小，影響平鋪後重複單元有多密。",
+    "縮小後，較多紋理內容可放進同一圖塊。",
+    "放大後，顆粒變大，也可能更容易辨認重複特徵。",
+    "先看多格預覽，調到辨識不到明顯重複，再回筆刷測試。適合紙紋、石紋等背景。",
+    "這是編輯來源圖塊，不同於回到筆刷設定後的紋路比例；兩層縮放都會影響最後顆粒大小。"
+  ],
+  "4:邊界重疊": [
+    "設定相鄰紋理圖塊交疊的範圍，讓接縫不只是硬碰硬，而有一段能互相融合。",
+    "重疊少時保留較多原圖，接縫也可能明顯。",
+    "重疊多時有較大融合空間，但圖樣可能變得重影或改變。",
+    "觀察多格預覽的十字接縫，慢慢增加直到直線不明顯；有規律圖案時更要留意是否錯位。",
+    "重疊量不是模糊強度；邊界還很硬時，要另外看遮罩硬度。"
+  ],
+  "4:遮罩硬度": [
+    "決定圖塊重疊區由一張圖過渡到另一張圖時，是硬切還是柔和混合。可想像拼貼邊緣的剪裁方式。",
+    "較柔的過渡更漸進，有助隱藏接縫，但可能看起來糊。",
+    "較硬的過渡更俐落，細節保留較多，卻可能露出邊界。",
+    "先固定重疊範圍，比較硬邊與柔邊的接縫；選擇既不糊又沒有一條直線的折衷。",
+    "若重疊範圍太少，只改硬度也可能無法消除接縫。"
+  ],
+  "4:鏡像重疊": [
+    "把接縫附近的圖樣鏡射，讓邊緣比較容易對上相鄰圖塊。像把一張紙沿邊折過去接圖。",
+    "關閉保留原圖方向的銜接。",
+    "開啟後，接縫可能較自然，但也可能出現蝴蝶狀的對稱重複。",
+    "用不規則石紋比較多格預覽；若看到過於規律的對稱花紋，嘗試關閉或更換來源位置。",
+    "鏡射能對邊，不能保證整體看不出重複；自然紋理仍需觀察大片預覽。"
+  ],
+  "4:金字塔混合": [
+    "用不同尺度的細節一起處理圖塊交界，讓粗大亮暗與細小顆粒都較容易銜接。適合複雜自然來源。",
+    "關閉時使用其他邊緣混合方式，規則圖案可能較好控制。",
+    "開啟後有機會減少自然紋理的接縫，但細節外觀也可能改變。",
+    "用石頭或木紋，先看接縫的大明暗，再看細顆粒；用多格預覽決定是否保留。",
+    "不是把圖變成金字塔形狀，也不是任何素材都該開；格線與文字要特別留意變形。"
+  ],
+  "5:渲染模式": [
+    "決定顏料如何累積、覆蓋和混合。同一個筆尖與顏色，在偏薄塗與偏厚重混合的模式下，疊筆的結果可以很不同。",
+    "淺釉光等模式適合先觀察薄塗與疊色，感覺較輕。",
+    "均勻混合、強烈混合較適合搭配濕混合觀察顏料相互作用；六種模式是選擇，不是線性強度。",
+    "畫兩條交叉線，再在同一區反覆塗三次；比較一筆內重疊與抬筆後疊加，找出喜歡的累色方式。",
+    "「顏色深」可能來自渲染、流或透明度；固定其他設定再換模式，不要同時全調。"
+  ],
+  "5:流": [
+    "控制筆刷在繪畫過程中送到畫布上的顏色與紋理量。可以想像同一支噴筆，出料少或出料多。",
+    "單次經過留下較少顏色，通常需要多次累積。",
+    "出料較強，筆觸較容易覆蓋底色；結果仍受渲染模式影響。",
+    "保持同一顏色，低流量畫一次再畫三次；比較是否能慢慢堆色。適合柔和上色與漸層。",
+    "流與整筆透明度不完全相同，尤其在同一筆反覆經過時，累積方式也受到渲染影響。"
+  ],
+  "5:濕邊緣": [
+    "讓筆觸邊界有顏料滲開的柔化感，像水分接觸紙纖維後不再是乾淨硬邊。",
+    "邊緣較保持原本的清晰輪廓。",
+    "邊界更柔和、有暈開感，細小尖角可能不再清楚。",
+    "用深色畫一塊寬筆觸，放大看外邊；水彩可增加，精準線稿通常降低。",
+    "濕邊緣不等於燃燒邊緣：前者著重滲開，後者著重邊緣與重疊處的加深效果。"
+  ],
+  "5:燃燒邊緣": [
+    "讓顏料邊緣或筆觸相交處產生較強的色彩加深關係，像積色留在交界。不是把筆觸真的燒焦。",
+    "邊緣加深較少，交疊較單純。",
+    "邊緣與重疊的深色感更明顯，太高可能出現髒邊。",
+    "畫兩個交叉的半透明色塊，觀察交界和外緣；適合想要積色感的水彩。",
+    "若整筆都變暗，還要檢查整體混色模式；這項重點是邊緣效果。"
+  ],
+  "5:燃燒邊緣模式": [
+    "指定邊緣效果怎麼與既有顏色合成。它決定邊緣變暗或產生色偏的計算方式，而不是邊緣有多寬。",
+    "選不同模式會改變邊緣與底色的互動，沒有單一低值。",
+    "即使強度相同，換模式也可能出現不同色相或明暗，沒有單一高值。",
+    "先讓燃燒邊緣有可見強度，再在兩種底色上比較模式；不要只在白底判斷。",
+    "如果燃燒邊緣為零，切換模式可能看不出作用；模式是有條件的設定。"
+  ],
+  "5:混色模式": [
+    "決定整個筆觸如何與畫布既有顏色合成。像同樣一層顏料，可以一般覆蓋，也可以著重加深或提亮。",
+    "例如一般模式較直觀地覆蓋或混合。",
+    "加深、提亮等模式會依底色產生不同結果；這是類型，不是數值高低。",
+    "畫一條線同時跨過白底、灰底、彩色底；用同一筆比較三個區域，才能看懂模式在做什麼。",
+    "筆刷混色與圖層混色是兩個層級；同時使用時效果可能相互疊加。"
+  ],
+  "5:亮度混合": [
+    "讓混合著重明暗數值，而不是只依一般色彩關係處理。可以用來觀察保留色彩與改變亮暗之間的差別。",
+    "關閉使用原本的混合方式。",
+    "開啟改以亮度關係混合，明暗與色彩結果可能不同。",
+    "用高飽和底色與灰色筆觸比較開關前後，觀察是否改變亮暗但保留不同程度的色彩。",
+    "不是螢幕亮度，也不等於把整張作品轉成灰階。"
+  ],
+  "5:阿爾法臨界值": [
+    "把筆觸像素依透明程度分成「保留為全不透明」與「捨去為全透明」兩邊，不再保留中間半透明。阿爾法就是透明度資訊。",
+    "關閉時保留柔邊與半透明過渡。",
+    "開啟後由臨界值量決定哪些像素留下，適合觀察硬邊或像素效果。",
+    "選柔邊來源，在彩色底上蓋印，比較開關前後；像素風可用它排除半透明邊。",
+    "它不是提高所有像素的透明度；它把結果二分，也可能讓柔邊細節消失。"
+  ],
+  "5:臨界值量": [
+    "在開啟阿爾法臨界值後，設定一個像素至少要多不透明才能留下。像用門檻篩選較實的部分。",
+    "門檻低，原本較淡的像素也能變成全不透明，保留範圍較大。",
+    "門檻高，只留下較實的像素，淡邊與細節可能消失。",
+    "用同一柔邊印章比較低、中、高門檻，看輪廓從膨脹到縮小；想做硬邊時逐步調整。",
+    "只有啟用阿爾法臨界值後才有這種篩選作用。門檻太高導致沒畫出來，不等於筆刷壞掉。"
+  ],
+  "5:經典正常結合模式": [
+    "讓雙筆刷在正常結合模式下使用較舊版本的混合行為。主要是為了維持舊雙筆刷的外觀。",
+    "關閉使用目前版本的正常結合方式。",
+    "開啟使用舊式行為；只有相關雙筆刷組合容易看出差別。",
+    "先複製舊的雙筆刷，再比較疊色與紋理；新建單一筆刷通常不需要為了效果更好而開啟。",
+    "這不是所有筆刷的「正常混色」總開關，也不代表經典模式畫質更好。"
+  ],
+  "6:稀釋": [
+    "改變顏料中水分的感覺，讓筆觸更像濃顏料或加水後的薄色。它與顏料量、攻擊等設定共同決定濕混合結果。",
+    "顏料較濃，色彩較實。",
+    "顏料較稀，底色更容易透出，也更容易觀察顏料逐漸消耗。",
+    "在 Procreate 使用混合類渲染，畫一條長線比較低、高稀釋，再試跨過已有色塊。",
+    "稀釋不是單純降低一個透明度值；與既有顏料互動時，其他濕混合設定仍會參與。"
+  ],
+  "6:顏料量": [
+    "決定每次起筆帶多少顏料，像毛筆沾一次顏料後能畫多遠。抬筆再畫會重新補入起始顏料。",
+    "少量時，長筆畫較早變淡或耗盡。",
+    "大量時，可維持較長的有色筆觸。",
+    "搭配較高稀釋，畫一筆長線，再分三筆畫同樣長度；觀察每次抬筆後是否重新有色。",
+    "與退減都可能出現越畫越淡，但顏料量屬於濕混合系統，不能當成同一個演算法。"
+  ],
+  "6:攻擊": [
+    "控制顏料附著到畫布的強度。可以想像筆裡有顏料，但真正留在紙面上的程度不同。",
+    "附著感較弱，結果更容易受稀釋與既有顏料影響。",
+    "顏料更明顯、厚實地留在筆畫中，覆色較強。",
+    "固定稀釋與顏料量，畫一條跨過色塊的長線，只改攻擊；適合在薄塗與厚塗感之間調整。",
+    "名稱不是起筆速度或筆壓敏感度；它也不是只控制起筆第一點。"
+  ],
+  "6:顏料取用": [
+    "控制筆刷拖曳畫布已有顏料的程度。像拿濕筆從紅色塊拖到白底，紅色可能被帶出一段。",
+    "較少拉動底下已有的色彩。",
+    "已有色彩更容易被帶走、混入筆觸，顏色可能變髒或形成自然混合。",
+    "先畫紅藍兩塊相鄰色，再用筆由紅拖向藍；比較交界拖出的顏色，適合揉合邊界。",
+    "空白畫布沒有既有顏料可取用，單在白底畫一次很難判斷這項。"
+  ],
+  "6:級數": [
+    "改變濕混合紋理的粗塊感與對比。可以理解為顏料留下的質感是細柔，還是更明顯地成塊。",
+    "粗塊與反差較弱，質感較柔。",
+    "粗糙顆塊與反差更醒目。",
+    "選本來就有紋理的濕筆，畫寬色塊並放大看，只改級數；適合調整厚重粗糙的上色感。",
+    "不是筆刷圖層數，也不是顏料品質等級；如果來源極平滑，差別可能較難辨識。"
+  ],
+  "6:模糊": [
+    "讓筆刷作用區內的顏料與邊界變柔，減少銳利的小細節。需放在已有清晰邊緣的地方才容易看懂。",
+    "顏料邊界與小顆粒較清楚。",
+    "混合過渡更柔，細節可能融在一起。",
+    "先畫一個紅藍硬邊，再用濕筆越過邊界，觀察過渡帶寬度；適合柔化而非保留線稿。",
+    "不是把整個圖層套高斯模糊；它跟著筆刷作用的位置與濕混合過程發生。"
+  ],
+  "6:模糊抖動": [
+    "讓一筆中每次蓋印的模糊程度不完全相同，使邊緣有時清楚、有時柔和。",
+    "0% 模糊程度較一致。",
+    "高值清晰與柔化交錯，結果較不均勻。",
+    "先設定能看見的模糊，再加抖動，跨過已畫的細線比較；可做不規則濕畫邊界。",
+    "它不會隨機改變位置；若想讓顆粒散開，要看筆畫路徑中的抖動。"
+  ],
+  "6:濕度抖動": [
+    "讓一筆中的稀釋程度隨機變動，形成時濃時淡、乾濕不一的感覺，類似紙面或筆上水分不均。",
+    "0% 水分變化較一致，容易預測。",
+    "高值濃淡與濕混合程度起伏更大。",
+    "在同一底色上畫寬線，先固定稀釋，再增加濕度抖動；適合不均勻水彩，不適合均勻填色。",
+    "它不是透明度抖動的同義詞：濕度還會參與顏料與底色的互動。"
+  ],
+  "8:速度：尺寸": [
+    "用畫線快慢改變筆尖大小，讓沒有筆壓的手指也能畫出速度帶來的粗細變化。比較時要保持筆刷基本尺寸不變。",
+    "負值端偏向慢畫較細、快畫較粗；0% 不使用速度改尺寸。",
+    "正值端偏向快畫較細、慢畫較粗，幅度越大差別越明顯。",
+    "用同樣大小畫慢線與快線，速度逐漸增加，再觀察線寬。適合手指書寫或帶速度感的筆觸。",
+    "速度與壓力是不同輸入；用 Apple Pencil 時要固定力道，避免把重壓造成的變粗誤認成速度效果。"
+  ],
+  "8:速度：透明度": [
+    "讓畫線速度影響筆觸透出背景的程度。快慢可以形成濃淡變化，不需要靠每次換顏色達成。",
+    "負值端偏向慢畫較淡；0% 不由速度改變透明度。",
+    "正值端偏向快畫較淡，增加幅度可拉大快慢差異。",
+    "在淺灰底畫慢線與快線，比較底色透出多少；適合速度感、輕快的淡筆。",
+    "變淡不是色相改變；若使用透明來源或低流量，最後還會疊加那些設定的影響。"
+  ],
+  "8:速度：間距": [
+    "依畫線速度改變相鄰蓋印的距離。可讓一筆在不同速度下有不同的顆粒密度。",
+    "負向設定可使快畫間距較小；0% 維持基本間距。",
+    "正向提高時，越快畫越容易拉開蓋印。",
+    "先把基本間距設為能看到單顆的程度，再慢畫、快畫比較；適合粒子與節奏變化的裝飾線。",
+    "這是刻意用速度調間距；一般間距不應因瀏覽器觸控事件變少就意外斷裂。"
+  ],
+  "8:抖動：尺寸": [
+    "讓每次蓋印的大小隨機改變，像一串顆粒裡有大有小，而不是每個都一模一樣。",
+    "0% 大小一致。",
+    "高值大小變化範圍更大，輪廓較不整齊。",
+    "先把間距提高到 70%，畫一串圓點比較；可做砂礫、星點與自然顆粒。",
+    "它不依照快慢或筆壓，也不是橫向位移；隨機小顆粒的中心仍可沿同一路徑。"
+  ],
+  "8:抖動：透明度": [
+    "讓每次蓋印的透明程度隨機變動，產生有深有淺的顆粒。單顆的大小與位置不一定改變。",
+    "0% 蓋印透明度較一致。",
+    "高值更容易看到淡顆粒與實顆粒交錯。",
+    "先拉開間距再比較，之後降低間距看重疊如何把淡顆粒遮住；適合粉質或斑駁筆觸。",
+    "密集重疊會掩蓋透明度差，不代表設定失效；它也不會自動改變顆粒色相。"
+  ],
+  "9:壓力曲線": [
+    "把實際施力轉成筆刷收到的壓力訊號。橫軸可想成手用了多大力，縱軸是筆刷把這股力當成多大；它本身不指定要改尺寸還是透明度。",
+    "曲線低於對角線時，同樣力道得到較小輸出，感覺要更用力才能達到強效果。",
+    "曲線高於對角線時，輕壓也有較大輸出，感覺較靈敏；不是所有節點一起往高拉。",
+    "先用直線曲線畫輕、中、重三筆，再只移動一個中間節點比較；手很輕的人可試較早抬升。",
+    "曲線會影響這枝筆使用到的壓力設定；它和全域曲線可能一起作用，不是單純的最大尺寸。"
+  ],
+  "9:傾斜曲線": [
+    "決定筆桿傾到什麼角度時，傾斜相關效果開始出現、如何過渡。直立約為 90 度，越躺平角度越小。",
+    "把觸發點移向較躺平的角度，通常要更斜才開始變化。",
+    "把觸發點移向較直立的角度，較早就會進入傾斜效果；要看圖上的角度而非只看左右。",
+    "保持輕重相同，從直立慢慢放斜，找出轉換點；可做直立勾線、側放排線的鉛筆。",
+    "它不是方位角；方位角是筆桿朝哪個方向。極低角度可能無法穩定接觸或取得可靠輸入。"
+  ],
+  "9:傾斜：漸變": [
+    "讓放斜筆桿時的塗抹更柔和，像鉛筆側鋒排線不再是一條硬線，而有逐漸變淡的過渡。",
+    "側鋒仍較清晰，過渡較短。",
+    "側鋒陰影更柔，邊緣的濃淡過渡更明顯。",
+    "先畫一排直立線，再放斜排一片陰影；只增加漸變，觀察明暗銜接是否較柔。",
+    "漸變不是改變色相，也不等於把整層模糊；先確認筆有進入設定的傾斜範圍。"
+  ],
+  "9:傾斜：尺寸壓縮": [
+    "在傾斜讓筆觸變大時，避免內部紋理也按同樣方式一起放大。可用來保留側鋒排線中的細顆粒。",
+    "關閉時，尺寸變化可能連帶讓紋理顆粒變大。",
+    "開啟時，更傾向保留顆粒尺度，讓變寬的筆觸露出更多紋理。",
+    "用有清楚紙紋的筆直立與側放比較，觀察的是「顆粒大小」，不只是線寬。",
+    "它是紋理與尺寸的關係，不是讓筆刷最大尺寸變小，也不是直接壓扁形狀。"
+  ],
+  "9:游標外廓": [
+    "設定筆刷懸浮游標的外框顏色與對比，方便落筆前看清作用範圍。它是操作輔助，不是畫在作品上的線。",
+    "無外廓時不顯示框線；在複雜底色上可能較難判斷筆尖大小。",
+    "對比外廓會配合底色改變明暗；作用中顏色則用目前選色表示。",
+    "在深底與淺底之間移動游標，選能看清的方式；使用大筆或橡皮擦時尤其有幫助。",
+    "若看不出變化，檢查進階游標是否允許依每枝筆刷設定；外廓不會出現在匯出的作品。"
+  ],
+  "9:估計壓力": [
+    "替懸浮預覽選一個假設的筆壓，讓尚未接觸畫布時也能看見接近某種力道的顏料外觀。懸浮時並沒有真的壓在畫布上。",
+    "停用可不顯示顏料；低值可預看較輕的筆壓效果。",
+    "高值可預看較重的筆壓效果，不代表實際落筆會強制使用高壓力。",
+    "在支援懸浮的 iPad 與 Apple Pencil 上，讓筆停在畫布上方，比較估計值再實際輕壓。",
+    "這是預覽用的估計，不會替手指建立筆壓，也不會改變你實際施力。"
+  ],
+  "9:懸浮填滿": [
+    "決定懸浮游標內要顯示空框、單色形狀，或完整顏色與紋理。讓你落筆前預看印章可能覆蓋哪裡。",
+    "無：只看外框，較不遮住作品。",
+    "形狀或全部：分別預看色塊，或連紋理一起看；這是顯示類型，不是數值高低。",
+    "拿有孔洞的裝飾印章在畫布上方移動，比較形狀與全部，選方便對位的預覽。",
+    "懸浮影像不是已落筆的內容，不會被存進作品；裝置需支援 Apple Pencil 懸浮。"
+  ],
+  "9:壓力：尺寸": [
+    "讓Apple Pencil 的筆壓控制筆尖大小，像同一枝筆從細線變成粗線。先固定其他輸入，才能分辨這一項的效果。",
+    "接近零時，這個輸入對尺寸影響很少；原本的尺寸設定仍然存在。",
+    "幅度增加後，輕壓到重壓的差異更大。正向尺寸設定常用來讓重壓變粗；其他項目與正負方向、曲線一起決定反應。",
+    "畫一條輕到重的長線，觀察線寬；適合書寫與勾線。測試時請輕壓到重壓，並保持其他動作相近。",
+    "只改尺寸不一定同時變深；若濃淡也變，檢查透明度或流。多項反應同時開啟時，最後效果會合在一起。"
+  ],
+  "9:壓力：透明度": [
+    "讓Apple Pencil 的筆壓控制筆觸遮住背景的程度；越透明越能透出底色。先固定其他輸入，才能分辨這一項的效果。",
+    "接近零時，這個輸入對透明度影響很少；原本的透明度設定仍然存在。",
+    "幅度增加後，輕壓到重壓的差異更大。正向尺寸設定常用來讓重壓變粗；其他項目與正負方向、曲線一起決定反應。",
+    "在淺灰底上測試由淡到實的筆觸；適合輕重排線與柔和上色。測試時請輕壓到重壓，並保持其他動作相近。",
+    "透明度不同於色相，也不等於紙紋深度。多項反應同時開啟時，最後效果會合在一起。"
+  ],
+  "9:壓力：流": [
+    "讓Apple Pencil 的筆壓控制送到畫布上的顏料量，影響上色的累積感。先固定其他輸入，才能分辨這一項的效果。",
+    "接近零時，這個輸入對流影響很少；原本的流設定仍然存在。",
+    "幅度增加後，輕壓到重壓的差異更大。正向尺寸設定常用來讓重壓變粗；其他項目與正負方向、曲線一起決定反應。",
+    "在同一區來回塗並逐漸改變力道，觀察顏色堆積；適合慢慢加深陰影。測試時請輕壓到重壓，並保持其他動作相近。",
+    "流與整筆透明度不完全相同，累積結果仍受渲染模式影響。多項反應同時開啟時，最後效果會合在一起。"
+  ],
+  "9:壓力：出血": [
+    "讓Apple Pencil 的筆壓控制筆觸邊緣的滲開感，可能犧牲小顆粒與清晰細節。先固定其他輸入，才能分辨這一項的效果。",
+    "接近零時，這個輸入對出血影響很少；原本的出血設定仍然存在。",
+    "幅度增加後，輕壓到重壓的差異更大。正向尺寸設定常用來讓重壓變粗；其他項目與正負方向、曲線一起決定反應。",
+    "先畫硬邊色塊，再沿邊測試不同輸入，觀察邊界是否柔化；適合濕畫效果。測試時請輕壓到重壓，並保持其他動作相近。",
+    "不是增加紅色，也不是移動筆尖位置；紋理與渲染會影響可見程度。多項反應同時開啟時，最後效果會合在一起。"
+  ],
+  "9:傾斜：透明度": [
+    "讓Apple Pencil 的傾斜角控制筆觸遮住背景的程度；越透明越能透出底色。先固定其他輸入，才能分辨這一項的效果。",
+    "接近零時，這個輸入對透明度影響很少；原本的透明度設定仍然存在。",
+    "幅度增加後，直立到側放的差異更大。需先進入傾斜曲線設定的角度範圍，才容易看到側鋒變化。",
+    "在淺灰底上測試由淡到實的筆觸；適合輕重排線與柔和上色。測試時請直立到側放，並保持其他動作相近。",
+    "透明度不同於色相，也不等於紙紋深度。多項反應同時開啟時，最後效果會合在一起。"
+  ],
+  "9:傾斜：出血": [
+    "讓Apple Pencil 的傾斜角控制筆觸邊緣的滲開感，可能犧牲小顆粒與清晰細節。先固定其他輸入，才能分辨這一項的效果。",
+    "接近零時，這個輸入對出血影響很少；原本的出血設定仍然存在。",
+    "幅度增加後，直立到側放的差異更大。需先進入傾斜曲線設定的角度範圍，才容易看到側鋒變化。",
+    "先畫硬邊色塊，再沿邊測試不同輸入，觀察邊界是否柔化；適合濕畫效果。測試時請直立到側放，並保持其他動作相近。",
+    "不是增加紅色，也不是移動筆尖位置；紋理與渲染會影響可見程度。多項反應同時開啟時，最後效果會合在一起。"
+  ],
+  "9:傾斜：尺寸": [
+    "讓Apple Pencil 的傾斜角控制筆尖大小，像同一枝筆從細線變成粗線。先固定其他輸入，才能分辨這一項的效果。",
+    "接近零時，這個輸入對尺寸影響很少；原本的尺寸設定仍然存在。",
+    "幅度增加後，直立到側放的差異更大。需先進入傾斜曲線設定的角度範圍，才容易看到側鋒變化。",
+    "畫一條輕到重的長線，觀察線寬；適合書寫與勾線。測試時請直立到側放，並保持其他動作相近。",
+    "只改尺寸不一定同時變深；若濃淡也變，檢查透明度或流。多項反應同時開啟時，最後效果會合在一起。"
+  ],
+  "9:側轉：透明度": [
+    "讓Apple Pencil Pro 的筆身側轉控制筆觸遮住背景的程度；越透明越能透出底色。先固定其他輸入，才能分辨這一項的效果。",
+    "接近零時，這個輸入對透明度影響很少；原本的透明度設定仍然存在。",
+    "幅度增加後，保持力道後旋轉筆身的差異更大。正負尺寸設定可改變粗細方向；透明度與出血則調整轉筆時的淡化或滲開幅度。",
+    "在淺灰底上測試由淡到實的筆觸；適合輕重排線與柔和上色。測試時請保持力道後旋轉筆身，並保持其他動作相近。",
+    "透明度不同於色相，也不等於紙紋深度。側轉需要支援的 Apple Pencil Pro，不能用改變畫線方向代替。"
+  ],
+  "9:側轉：出血": [
+    "讓Apple Pencil Pro 的筆身側轉控制筆觸邊緣的滲開感，可能犧牲小顆粒與清晰細節。先固定其他輸入，才能分辨這一項的效果。",
+    "接近零時，這個輸入對出血影響很少；原本的出血設定仍然存在。",
+    "幅度增加後，保持力道後旋轉筆身的差異更大。正負尺寸設定可改變粗細方向；透明度與出血則調整轉筆時的淡化或滲開幅度。",
+    "先畫硬邊色塊，再沿邊測試不同輸入，觀察邊界是否柔化；適合濕畫效果。測試時請保持力道後旋轉筆身，並保持其他動作相近。",
+    "不是增加紅色，也不是移動筆尖位置；紋理與渲染會影響可見程度。側轉需要支援的 Apple Pencil Pro，不能用改變畫線方向代替。"
+  ],
+  "9:側轉：尺寸": [
+    "讓Apple Pencil Pro 的筆身側轉控制筆尖大小，像同一枝筆從細線變成粗線。先固定其他輸入，才能分辨這一項的效果。",
+    "接近零時，這個輸入對尺寸影響很少；原本的尺寸設定仍然存在。",
+    "幅度增加後，保持力道後旋轉筆身的差異更大。正負尺寸設定可改變粗細方向；透明度與出血則調整轉筆時的淡化或滲開幅度。",
+    "畫一條輕到重的長線，觀察線寬；適合書寫與勾線。測試時請保持力道後旋轉筆身，並保持其他動作相近。",
+    "只改尺寸不一定同時變深；若濃淡也變，檢查透明度或流。側轉需要支援的 Apple Pencil Pro，不能用改變畫線方向代替。"
+  ],
+  "10:螢幕方向": [
+    "決定有上下方向的筆尖，要以裝置螢幕還是畫布作為方向基準。適合用字母或葉片理解。",
+    "關閉時，以畫布方向維持筆尖朝向，裝置轉向不必改變圖案關係。",
+    "開啟時，以裝置目前方向維持朝向，轉動裝置後與畫布的關係可能改變。",
+    "選不對稱印章，單點後轉動裝置再單點，對照方向；有固定上下的裝飾筆刷特別需要確認。",
+    "它不是鎖定螢幕旋轉，也不等於形狀跟隨筆畫方向；對稱圓形通常看不出差別。"
+  ],
+  "10:塗抹拖曳": [
+    "設定這枝筆拿來當塗抹工具時，推拉已有顏色的力度。它影響顏色被帶走的程度，而非一般畫筆的出色量。",
+    "較輕微地柔化或拖動底色。",
+    "較明顯地把原有顏料帶向移動方向。",
+    "在 Procreate 畫紅藍相鄰色塊，切成塗抹工具跨過邊界，比較拖出多長的色帶。",
+    "必須用塗抹工具測試；空白畫布沒有既有顏色可拖，也不要與濕混合的顏料取用當成同一項。"
+  ],
+  "10:最大尺寸": [
+    "設定這枝筆尺寸控制能到達的上限。像替側邊的大小旋鈕設定「轉到最大到底有多粗」。",
+    "上限較小，拉到最大仍不會非常粗。",
+    "上限較大，可覆蓋更寬範圍，但細部調整可能變得敏感。",
+    "複製筆刷後設定兩種上限，都把側邊尺寸拉到最大比較；細節筆與鋪色筆可使用不同範圍。",
+    "這不是目前筆尖大小。你仍需用繪畫介面的尺寸控制選擇當下大小。"
+  ],
+  "10:最小尺寸": [
+    "設定尺寸控制的下限，決定把大小調到最小時，這枝筆最細能到哪裡。",
+    "下限低，可取得很細的筆觸。",
+    "下限高，即使側邊尺寸很小，筆尖仍保留一定寬度。",
+    "把側邊尺寸拉到最小後比較；裝飾印章不想縮到看不見時可保留一定下限。",
+    "最小尺寸是範圍邊界，不是每一筆的起筆錐化，也不是筆壓曲線本身。"
+  ],
+  "10:最大透明度": [
+    "設定不透明度控制能達到的最高遮蓋程度。即使側邊調到最實，也受這個上限限制。",
+    "上限低時，筆觸較容易透出底色。",
+    "上限高時，有機會得到較實的筆觸，仍受來源與渲染影響。",
+    "在灰色底上畫線，把側邊不透明度調到最高比較；適合限制柔和上色筆不會一下蓋太實。",
+    "「最大」是限制範圍，不保證所有來源像素都變成全不透明；柔邊與紋理仍有作用。"
+  ],
+  "10:最小透明度": [
+    "設定不透明度控制的最低遮蓋範圍，避免側邊控制拉低後淡到幾乎不可見。",
+    "下限低，可畫非常淡的筆觸。",
+    "下限高，低設定也保留一定可見程度。",
+    "在相同底色上把側邊不透明度拉低，再比較不同下限；需要穩定可見的記號筆可逐步調整。",
+    "它不是退減終點透明度，也不等於讓每個半透明像素一律變實。"
+  ],
+  "11:金屬": [
+    "在 3D 材質繪畫中，控制表面呈現金屬或非金屬的反射特性。外觀還會受到環境光與粗糙度影響。",
+    "接近非金屬，像塑膠、石頭或木材。",
+    "更像金屬，反射顏色與亮部的關係改變；不保證只是「更亮」。",
+    "在同一個 3D 物件畫兩塊相同顏色，分別低金屬與高金屬，再轉動光線觀察。",
+    "它不是替 2D 線條加亮粉；只在平面色塊上改亮度不能等同真正金屬反射。"
+  ],
+  "11:粗糙度": [
+    "控制 3D 表面反射光有多分散。像同樣材料拋光或磨砂後，亮斑大小與清晰程度不同。",
+    "表面較光滑，反射亮斑較集中清楚。",
+    "表面較霧，亮斑較寬、較分散，映像不清晰。",
+    "固定金屬與顏色，只比較低、高粗糙度，轉動 3D 物件看亮斑；可區分拋光金屬與磨砂金屬。",
+    "粗糙度不是幾何凹凸，也不等於紋路深度；同一片平面可以反射得很光滑或很霧。"
+  ],
+  "12:預覽筆圖": [
+    "調整筆刷庫中展示這枝筆的示意筆觸。它像商品縮圖，幫你辨認筆刷，但不等於作品裡真正畫下的一筆。",
+    "展示簡單短線，可快速看出輪廓與質感。",
+    "展示較明顯的壓力、濕混合或傾斜變化，有助辨認特色；這不是單一高低滑桿。",
+    "改完預覽選項後回到筆刷庫，檢查縮圖，再到畫布真正試畫一筆對照。",
+    "只改預覽不會自動改寫壓力尺寸或紋理來源；要改實際筆觸，請到對應設定。"
+  ],
+  "12:使用浮水印預覽": [
+    "將筆刷庫縮圖改成單枚形狀印章，而非一條拉長的筆畫，方便看清裝飾素材本身。這裡的浮水印是預覽形式。",
+    "關閉使用筆畫式縮圖，較能看出連續繪畫質感。",
+    "開啟使用印章式縮圖，葉片、花朵或圖案更容易辨認。",
+    "對裝飾印章比較開關前後的筆刷庫縮圖；一般鉛筆可維持筆畫式，圖案筆則試印章式。",
+    "不會在你的作品加上版權水印，也不會把筆刷變成只能單點、不能拖畫。"
+  ],
+  "12:尺寸": [
+    "調整筆刷庫縮圖中的筆觸或印章大小，讓縮圖不會小到看不清，也不會大到被裁切。",
+    "縮圖中筆觸較小，較容易看到整個形狀。",
+    "縮圖中筆觸較大，細節更醒目，但可能超出預覽範圍。",
+    "調完回筆刷庫看完整縮圖；裝飾圖案先確保外輪廓沒有被切掉。",
+    "它只處理預覽顯示；畫布上的實際筆刷尺寸要用繪畫控制或屬性範圍調整。"
+  ],
+  "12:最小壓力": [
+    "設定預覽示意中較輕力的部分要用多大壓力，讓縮圖中的細端不會完全消失。",
+    "預覽可呈現更輕、更細或更淡的區段，視筆壓設定而定。",
+    "預覽的輕端也保留較強效果，縮圖可能較均勻。",
+    "使用會隨壓力變粗的筆，調整後看縮圖最細的一端；選能辨識又不誤導的程度。",
+    "它不是限制你手實際能輸入的最小力道，不能用來修正畫布上的筆壓手感。"
+  ],
+  "12:壓力感應比例": [
+    "調整展示筆畫採用的壓力表現程度，讓筆刷庫縮圖能呈現這枝筆的粗細或濃淡特色。",
+    "預覽中的壓力變化較不強烈。",
+    "預覽更強調壓力相關的變化，前提是筆刷本身有對應設定。",
+    "先在畫布試畫確認特色，再調整預覽讓縮圖接近常用筆觸；不要只為好看而誇大。",
+    "這裡不是 Apple Pencil 的實際壓力曲線；只看縮圖改變不代表筆刷行為已變。"
+  ],
+  "12:濕混合": [
+    "設定筆刷庫展示筆畫是否呈現濕混合特色，讓會耗色或混色的筆刷在縮圖中容易辨識。",
+    "關閉時，展示筆畫不呈現濕混合效果。",
+    "開啟時，展示筆畫帶入筆刷既有的濕混合效果；它是開關，不是漸變強度。",
+    "對一枝濕筆調整此預覽，再回到畫布跨過色塊試畫，確認縮圖有代表性。",
+    "它不是濕混合總強度；實際稀釋、取色和拖曳請到濕混合分類調整。"
+  ],
+  "12:傾斜角度": [
+    "為展示筆畫指定模擬的筆姿角度，供方向相關效果使用。若形狀輸入方式使用方位角或側轉，預覽角度會影響筆尖的展示方向。",
+    "選一個角度，先觀察不對稱筆尖在縮圖中的朝向。",
+    "換另一個角度，再比較形狀方向與已有相關效果；它不是單純的強度越高越大。",
+    "選長橢圓或葉片來源，先固定其他預覽設定，只改角度，看展示筆畫的朝向是否改變。",
+    "它只設定展示筆畫的輸入條件，不會限制實際握筆；不要把方位角、傾斜角與側轉當成同一個量。"
+  ],
+  "13:筆刷名稱": [
+    "筆刷名稱用來在筆刷庫辨認用途，不參與筆觸運算。Procreate 5.4 起，更名入口在筆刷庫：長按筆刷，再選重新命名，而不是在筆刷工作室直接改標題。",
+    "簡短名稱容易掃讀，例如「細線・穩定」。",
+    "較完整名稱可補用途或版本，例如「乾刷・粗紙・v2」；不是數值高低。",
+    "回筆刷庫複製一枝筆，長按副本並重新命名為用途加版本，例如「細線・v2」，再實際試畫確認。",
+    "把名字改成水彩不會讓筆刷自動具備濕混合；效果來自設定本身。"
+  ],
+  "13:製作者": [
+    "記錄這枝筆刷的作者資訊，方便辨識來源與整理分享筆刷。它屬於資料欄位，不是畫筆效果。",
+    "未填時較難從筆刷資訊辨認作者。",
+    "填入清楚的名稱或標記，方便日後追溯；沒有強度高低。",
+    "為自己製作的筆填上可辨認名稱；整理他人筆刷時保留原作者資訊，另用名稱記錄自己的改版。",
+    "作者欄位不會自動驗證版權，也不等於分享或販售授權。"
+  ],
+  "13:簽名": [
+    "保存筆刷資訊中的手寫簽名，用於標示作者或個人識別。它和畫布上的筆觸是分開的資料。",
+    "空白時沒有簽名展示。",
+    "簽好後會在筆刷資訊中作為識別內容；不是數值高低。",
+    "製作個人筆刷時留下簡短簽名，匯出後重新匯入檢查資訊是否完整。",
+    "不會把簽名自動蓋在每一筆或每一張作品上；它也不是筆刷名稱。"
+  ],
+  "13:建立重置點": [
+    "把目前整組筆刷設定存成可返回的基準，方便之後大膽試調。像在改配方前先記下一份版本。",
+    "沒有更新重置點時，重置會返回既有的基準，未必是你剛調好的版本。",
+    "建立後，之後的重置會以這份設定為基準；它是儲存動作，不是數值高低。",
+    "先複製筆刷，調成滿意的版本並建立重置點，再修改間距測試；最後用重置確認可回來。",
+    "建立新重置點可能取代原基準。想保留不同版本請另存副本，不要把它當成無限版本歷史。"
+  ],
+  "13:重置筆刷": [
+    "將這枝筆刷的設定還原到已儲存的重置基準。適合試調後想回到確認過的配方。",
+    "執行前保留目前設定，可繼續試調或先複製備份。",
+    "執行後回到重置基準，後來的設定修改可能被取代；這是還原動作。",
+    "不確定基準是什麼時先複製筆刷，再在副本上重置，比較形狀、間距與筆壓設定。",
+    "不是畫布復原，也不是刪掉作品筆畫；它還原的是筆刷配方，不能代替多版本備份。"
+  ],
+  "7:水印顏色抖動：色相": [
+    "每次蓋印各自抽取顏色變化，所以同一筆裡可以有不同顏色。這裡的「水印」對應蓋印，不是版權浮水印。控制的分量是顏色種類，例如紅、橙、綠、藍。",
+    "小範圍偏色仍接近原選色。",
+    "大範圍變化可跨到很不同的顏色。",
+    "在 Procreate 先把間距拉大到能分清每枚印章，畫一條長線再比較；先選飽和的橙色，避免白灰黑；用它做秋葉或彩色粒子。",
+    "與筆畫顏色抖動不同，這項在同一筆的不同蓋印之間也會變。灰階或低飽和色不容易看出色相差，先確認選色有足夠彩度。"
+  ],
+  "7:水印顏色抖動：飽和度": [
+    "每次蓋印各自抽取顏色變化，所以同一筆裡可以有不同顏色。這裡的「水印」對應蓋印，不是版權浮水印。控制的分量是顏色鮮豔或灰濁的程度，不是色相種類。",
+    "較接近原本彩度。",
+    "較容易出現鮮豔與灰濁的差異。",
+    "在 Procreate 先把間距拉大到能分清每枚印章，畫一條長線再比較；選中等明度的紅色，比較鮮紅和灰紅；適合自然植被或降低塑膠感。",
+    "與筆畫顏色抖動不同，這項在同一筆的不同蓋印之間也會變。降低飽和度不是一律變白，也可能變成接近同明度的灰色。"
+  ],
+  "7:水印顏色抖動：亮度": [
+    "每次蓋印各自抽取顏色變化，所以同一筆裡可以有不同顏色。這裡的「水印」對應蓋印，不是版權浮水印。控制的分量是顏色的明暗；抖動的亮度主要觀察向較亮色階的變化。",
+    "亮度差異較小。",
+    "亮暗變化更醒目；亮度抖動可出現更接近白色的部分。",
+    "在 Procreate 先把間距拉大到能分清每枚印章，畫一條長線再比較；選中深色，在灰底上比較淡色階；適合碎光或亮顆粒。",
+    "與筆畫顏色抖動不同，這項在同一筆的不同蓋印之間也會變。亮色不是半透明；在深底上觀察，白色覆蓋與透出底色是兩回事。"
+  ],
+  "7:水印顏色抖動：暗度": [
+    "每次蓋印各自抽取顏色變化，所以同一筆裡可以有不同顏色。這裡的「水印」對應蓋印，不是版權浮水印。控制的分量是顏色向較暗色階變化的程度。",
+    "深色變化較少。",
+    "較容易出現接近黑色的深色部分。",
+    "在 Procreate 先把間距拉大到能分清每枚印章，畫一條長線再比較；選中等明度的棕色，比較深淺顆粒；適合泥土或陰影碎點。",
+    "與筆畫顏色抖動不同，這項在同一筆的不同蓋印之間也會變。暗度與亮度是相反的變化方向，兩者都開很高可能使色階跳動過大。"
+  ],
+  "7:水印顏色抖動：次要顏色": [
+    "每次蓋印各自抽取顏色變化，所以同一筆裡可以有不同顏色。這裡的「水印」對應蓋印，不是版權浮水印。控制的分量是主色與第二顏色之間的變化，不是任意抽一種彩虹色。",
+    "大致保留主色。",
+    "可在主色與次要色之間得到較多變化。",
+    "在 Procreate 先把間距拉大到能分清每枚印章，畫一條長線再比較；在 Procreate 先設主色黃、次要色紅，再比較橙黃到紅的變化；適合雙色花瓣。",
+    "與筆畫顏色抖動不同，這項在同一筆的不同蓋印之間也會變。兩個顏色相同時很難看出差異；先確認真的有設定次要色。"
+  ],
+  "7:筆畫顏色抖動：色相": [
+    "每次重新起筆抽取一次顏色變化；同一筆不會因這一項就每顆都重新抽色。控制的分量是顏色種類，例如紅、橙、綠、藍。",
+    "小範圍偏色仍接近原選色。",
+    "大範圍變化可跨到很不同的顏色。",
+    "抬筆重畫五條分開的短線，觀察不同筆之間的顏色；先選飽和的橙色，避免白灰黑；用它做秋葉或彩色粒子。",
+    "只畫一條長線看不完整，要多次起筆；若同筆內也跳色，另查蓋印顏色抖動。灰階或低飽和色不容易看出色相差，先確認選色有足夠彩度。"
+  ],
+  "7:筆畫顏色抖動：飽和度": [
+    "每次重新起筆抽取一次顏色變化；同一筆不會因這一項就每顆都重新抽色。控制的分量是顏色鮮豔或灰濁的程度，不是色相種類。",
+    "較接近原本彩度。",
+    "較容易出現鮮豔與灰濁的差異。",
+    "抬筆重畫五條分開的短線，觀察不同筆之間的顏色；選中等明度的紅色，比較鮮紅和灰紅；適合自然植被或降低塑膠感。",
+    "只畫一條長線看不完整，要多次起筆；若同筆內也跳色，另查蓋印顏色抖動。降低飽和度不是一律變白，也可能變成接近同明度的灰色。"
+  ],
+  "7:筆畫顏色抖動：亮度": [
+    "每次重新起筆抽取一次顏色變化；同一筆不會因這一項就每顆都重新抽色。控制的分量是顏色的明暗；抖動的亮度主要觀察向較亮色階的變化。",
+    "亮度差異較小。",
+    "亮暗變化更醒目；亮度抖動可出現更接近白色的部分。",
+    "抬筆重畫五條分開的短線，觀察不同筆之間的顏色；選中深色，在灰底上比較淡色階；適合碎光或亮顆粒。",
+    "只畫一條長線看不完整，要多次起筆；若同筆內也跳色，另查蓋印顏色抖動。亮色不是半透明；在深底上觀察，白色覆蓋與透出底色是兩回事。"
+  ],
+  "7:筆畫顏色抖動：暗度": [
+    "每次重新起筆抽取一次顏色變化；同一筆不會因這一項就每顆都重新抽色。控制的分量是顏色向較暗色階變化的程度。",
+    "深色變化較少。",
+    "較容易出現接近黑色的深色部分。",
+    "抬筆重畫五條分開的短線，觀察不同筆之間的顏色；選中等明度的棕色，比較深淺顆粒；適合泥土或陰影碎點。",
+    "只畫一條長線看不完整，要多次起筆；若同筆內也跳色，另查蓋印顏色抖動。暗度與亮度是相反的變化方向，兩者都開很高可能使色階跳動過大。"
+  ],
+  "7:筆畫顏色抖動：次要顏色": [
+    "每次重新起筆抽取一次顏色變化；同一筆不會因這一項就每顆都重新抽色。控制的分量是主色與第二顏色之間的變化，不是任意抽一種彩虹色。",
+    "大致保留主色。",
+    "可在主色與次要色之間得到較多變化。",
+    "抬筆重畫五條分開的短線，觀察不同筆之間的顏色；在 Procreate 先設主色黃、次要色紅，再比較橙黃到紅的變化；適合雙色花瓣。",
+    "只畫一條長線看不完整，要多次起筆；若同筆內也跳色，另查蓋印顏色抖動。兩個顏色相同時很難看出差異；先確認真的有設定次要色。"
+  ],
+  "7:顏色壓力：色相": [
+    "讓Apple Pencil 筆壓控制顏色，不是每次隨機抽色。當你輕壓到重壓時，同一筆中也能有連續的顏色變化。控制的分量是顏色種類，例如紅、橙、綠、藍。",
+    "接近零時，這個輸入幾乎不改變此顏色分量。",
+    "幅度增加後，輕壓到重壓造成的顏色差異變大；正負方向與曲線會影響過渡。",
+    "在一筆內輕壓到重壓，固定其他動作，觀察輸入與顏色的對應；先選飽和的橙色，避免白灰黑；用它做秋葉或彩色粒子。",
+    "這不是顏色抖動；相同輸入應有相對一致的反應，方向與幅度需配合實際設定。灰階或低飽和色不容易看出色相差，先確認選色有足夠彩度。"
+  ],
+  "7:顏色壓力：飽和度": [
+    "讓Apple Pencil 筆壓控制顏色，不是每次隨機抽色。當你輕壓到重壓時，同一筆中也能有連續的顏色變化。控制的分量是顏色鮮豔或灰濁的程度，不是色相種類。",
+    "接近零時，這個輸入幾乎不改變此顏色分量。",
+    "幅度增加後，輕壓到重壓造成的顏色差異變大；正負方向與曲線會影響過渡。",
+    "在一筆內輕壓到重壓，固定其他動作，觀察輸入與顏色的對應；選中等明度的紅色，比較鮮紅和灰紅；適合自然植被或降低塑膠感。",
+    "這不是顏色抖動；相同輸入應有相對一致的反應，方向與幅度需配合實際設定。降低飽和度不是一律變白，也可能變成接近同明度的灰色。"
+  ],
+  "7:顏色壓力：亮度": [
+    "讓Apple Pencil 筆壓控制顏色，不是每次隨機抽色。當你輕壓到重壓時，同一筆中也能有連續的顏色變化。控制的分量是顏色的明暗；抖動的亮度主要觀察向較亮色階的變化。",
+    "接近零時，這個輸入幾乎不改變此顏色分量。",
+    "幅度增加後，輕壓到重壓造成的顏色差異變大；正負方向與曲線會影響過渡。",
+    "在一筆內輕壓到重壓，固定其他動作，觀察輸入與顏色的對應；選中深色，在灰底上比較淡色階；適合碎光或亮顆粒。",
+    "這不是顏色抖動；相同輸入應有相對一致的反應，方向與幅度需配合實際設定。亮色不是半透明；在深底上觀察，白色覆蓋與透出底色是兩回事。"
+  ],
+  "7:顏色壓力：間色": [
+    "讓Apple Pencil 筆壓控制顏色，不是每次隨機抽色。當你輕壓到重壓時，同一筆中也能有連續的顏色變化。控制的分量是主色與次要顏色之間的過渡；這裡指第二顏色混入，不是混色模式。",
+    "接近零時，這個輸入幾乎不改變此顏色分量。",
+    "幅度增加後，輕壓到重壓造成的顏色差異變大；正負方向與曲線會影響過渡。",
+    "在一筆內輕壓到重壓，固定其他動作，觀察輸入與顏色的對應；先設主色黃、次要色紅，用一筆連續改變輸入，觀察顏色過渡。",
+    "這不是顏色抖動；相同輸入應有相對一致的反應，方向與幅度需配合實際設定。必須先設定不同的主色與次要色；若只有灰色，不要誤以為是筆壓沒有反應。"
+  ],
+  "7:顏色傾斜：色相": [
+    "讓筆桿傾斜角控制顏色，不是每次隨機抽色。當你直立到側放時，同一筆中也能有連續的顏色變化。控制的分量是顏色種類，例如紅、橙、綠、藍。",
+    "接近零時，這個輸入幾乎不改變此顏色分量。",
+    "幅度增加後，直立到側放造成的顏色差異變大；正負方向與曲線會影響過渡。",
+    "在一筆內直立到側放，固定其他動作，觀察輸入與顏色的對應；先選飽和的橙色，避免白灰黑；用它做秋葉或彩色粒子。",
+    "這不是顏色抖動；相同輸入應有相對一致的反應，方向與幅度需配合實際設定。灰階或低飽和色不容易看出色相差，先確認選色有足夠彩度。"
+  ],
+  "7:顏色傾斜：飽和度": [
+    "讓筆桿傾斜角控制顏色，不是每次隨機抽色。當你直立到側放時，同一筆中也能有連續的顏色變化。控制的分量是顏色鮮豔或灰濁的程度，不是色相種類。",
+    "接近零時，這個輸入幾乎不改變此顏色分量。",
+    "幅度增加後，直立到側放造成的顏色差異變大；正負方向與曲線會影響過渡。",
+    "在一筆內直立到側放，固定其他動作，觀察輸入與顏色的對應；選中等明度的紅色，比較鮮紅和灰紅；適合自然植被或降低塑膠感。",
+    "這不是顏色抖動；相同輸入應有相對一致的反應，方向與幅度需配合實際設定。降低飽和度不是一律變白，也可能變成接近同明度的灰色。"
+  ],
+  "7:顏色傾斜：亮度": [
+    "讓筆桿傾斜角控制顏色，不是每次隨機抽色。當你直立到側放時，同一筆中也能有連續的顏色變化。控制的分量是顏色的明暗；抖動的亮度主要觀察向較亮色階的變化。",
+    "接近零時，這個輸入幾乎不改變此顏色分量。",
+    "幅度增加後，直立到側放造成的顏色差異變大；正負方向與曲線會影響過渡。",
+    "在一筆內直立到側放，固定其他動作，觀察輸入與顏色的對應；選中深色，在灰底上比較淡色階；適合碎光或亮顆粒。",
+    "這不是顏色抖動；相同輸入應有相對一致的反應，方向與幅度需配合實際設定。亮色不是半透明；在深底上觀察，白色覆蓋與透出底色是兩回事。"
+  ],
+  "7:顏色傾斜：間色": [
+    "讓筆桿傾斜角控制顏色，不是每次隨機抽色。當你直立到側放時，同一筆中也能有連續的顏色變化。控制的分量是主色與次要顏色之間的過渡；這裡指第二顏色混入，不是混色模式。",
+    "接近零時，這個輸入幾乎不改變此顏色分量。",
+    "幅度增加後，直立到側放造成的顏色差異變大；正負方向與曲線會影響過渡。",
+    "在一筆內直立到側放，固定其他動作，觀察輸入與顏色的對應；先設主色黃、次要色紅，用一筆連續改變輸入，觀察顏色過渡。",
+    "這不是顏色抖動；相同輸入應有相對一致的反應，方向與幅度需配合實際設定。必須先設定不同的主色與次要色；若只有灰色，不要誤以為是筆壓沒有反應。"
+  ],
+  "7:顏色側轉：色相": [
+    "讓Apple Pencil Pro 側轉控制顏色，不是每次隨機抽色。當你保持力道並轉動筆身時，同一筆中也能有連續的顏色變化。控制的分量是顏色種類，例如紅、橙、綠、藍。",
+    "接近零時，這個輸入幾乎不改變此顏色分量。",
+    "幅度增加後，保持力道並轉動筆身造成的顏色差異變大；正負方向與曲線會影響過渡。",
+    "在一筆內保持力道並轉動筆身，固定其他動作，觀察輸入與顏色的對應；先選飽和的橙色，避免白灰黑；用它做秋葉或彩色粒子。",
+    "需要 Apple Pencil Pro 的側轉感測；改變畫線方向不等於側轉。灰階或低飽和色不容易看出色相差，先確認選色有足夠彩度。"
+  ],
+  "7:顏色側轉：飽和度": [
+    "讓Apple Pencil Pro 側轉控制顏色，不是每次隨機抽色。當你保持力道並轉動筆身時，同一筆中也能有連續的顏色變化。控制的分量是顏色鮮豔或灰濁的程度，不是色相種類。",
+    "接近零時，這個輸入幾乎不改變此顏色分量。",
+    "幅度增加後，保持力道並轉動筆身造成的顏色差異變大；正負方向與曲線會影響過渡。",
+    "在一筆內保持力道並轉動筆身，固定其他動作，觀察輸入與顏色的對應；選中等明度的紅色，比較鮮紅和灰紅；適合自然植被或降低塑膠感。",
+    "需要 Apple Pencil Pro 的側轉感測；改變畫線方向不等於側轉。降低飽和度不是一律變白，也可能變成接近同明度的灰色。"
+  ],
+  "7:顏色側轉：亮度": [
+    "讓Apple Pencil Pro 側轉控制顏色，不是每次隨機抽色。當你保持力道並轉動筆身時，同一筆中也能有連續的顏色變化。控制的分量是顏色的明暗；抖動的亮度主要觀察向較亮色階的變化。",
+    "接近零時，這個輸入幾乎不改變此顏色分量。",
+    "幅度增加後，保持力道並轉動筆身造成的顏色差異變大；正負方向與曲線會影響過渡。",
+    "在一筆內保持力道並轉動筆身，固定其他動作，觀察輸入與顏色的對應；選中深色，在灰底上比較淡色階；適合碎光或亮顆粒。",
+    "需要 Apple Pencil Pro 的側轉感測；改變畫線方向不等於側轉。亮色不是半透明；在深底上觀察，白色覆蓋與透出底色是兩回事。"
+  ],
+  "7:顏色側轉：間色": [
+    "讓Apple Pencil Pro 側轉控制顏色，不是每次隨機抽色。當你保持力道並轉動筆身時，同一筆中也能有連續的顏色變化。控制的分量是主色與次要顏色之間的過渡；這裡指第二顏色混入，不是混色模式。",
+    "接近零時，這個輸入幾乎不改變此顏色分量。",
+    "幅度增加後，保持力道並轉動筆身造成的顏色差異變大；正負方向與曲線會影響過渡。",
+    "在一筆內保持力道並轉動筆身，固定其他動作，觀察輸入與顏色的對應；先設主色黃、次要色紅，用一筆連續改變輸入，觀察顏色過渡。",
+    "需要 Apple Pencil Pro 的側轉感測；改變畫線方向不等於側轉。必須先設定不同的主色與次要色；若只有灰色，不要誤以為是筆壓沒有反應。"
+  ]
+};
+const supported={spacing:[0,100],spacingJitter:[0,100],lateral:[0,100],linear:[0,100],falloff:[0,100],streamline:[0,100],speedSize:[-100,100],speedOpacity:[-100,100],speedSpacing:[-100,100],sizeJitter:[0,100],opacityJitter:[0,100]};
 const defaults={spacing:17,spacingJitter:0,lateral:0,linear:0,falloff:0,streamline:0,scatter:0,count:1,countJitter:0,speedSize:0,speedOpacity:0,speedSpacing:0,sizeJitter:0,opacityJitter:0};
 
 const presets=[['鉛筆','Pencil','✎',{spacing:9,spacingJitter:3,scatter:5,sizeJitter:8,opacityJitter:10}],['墨線筆','Inking','〰',{spacing:2,spacingJitter:0,scatter:0,sizeJitter:0,opacityJitter:0}],['噴槍','Airbrush','◌',{spacing:3,scatter:0,opacityJitter:18}],['水彩','Watercolor','◍',{spacing:8,scatter:12,opacityJitter:22}],['粉彩','Pastel','✳',{spacing:12,spacingJitter:12,scatter:25,sizeJitter:15}],['裝飾印章','Stamp','✿',{spacing:80,scatter:20,count:1}]];
 
-const $=id=>document.getElementById(id);let lang='zh',category=0,opened=-1,settings={...defaults},color='#567e66',size=18,strokes=[],undone=[],current=null;const canvas=$('canvas'),ctx=canvas.getContext('2d');let dpr=1;
+const $=id=>document.getElementById(id);let lang='zh',category=0,opened=-1,settings={...defaults},color='#567e66',size=18,strokes=[],undone=[],current=null;const canvas=$('canvas'),ctx=canvas.getContext('2d');let dpr=1;let previewOpen=!matchMedia('(max-width:700px)').matches;function updatePreview(){ $('preview').classList.toggle('collapsed',!previewOpen);$('previewToggle').setAttribute('aria-expanded',previewOpen);$('previewState').textContent=previewOpen?txt('收合 ▾','Collapse ▾'):txt('展開 ▴','Expand ▴');if(previewOpen)requestAnimationFrame(resize)}$('previewToggle').onclick=()=>{finish();previewOpen=!previewOpen;updatePreview()};
 function txt(a,b){return lang==='zh'?a:b}function drawCategories(){const box=$('categories');box.replaceChildren();names.forEach((n,i)=>{const b=document.createElement('button');b.className='category'+(i===category?' active':'');b.innerHTML='<span></span><span class="count">'+groups[i].length+'</span>';b.firstElementChild.textContent=n[lang==='zh'?0:1];b.onclick=()=>{category=i;opened=-1;$('search').value='';drawCategories();drawItems();$('sidebar').classList.remove('show');$('menuSwitch').checked=false};box.append(b)})}
-function drawItems(){const list=$('items');list.replaceChildren();$('sectionTitle').textContent=names[category][lang==='zh'?0:1];$('sectionEn').textContent=names[category][1].toUpperCase();$('sectionDesc').textContent=txt('點選設定查看說明；可操作項目附有滑桿','Tap a setting for details; adjustable items have sliders');let query=$('search').value.trim().toLowerCase();let found=0;groups[category].forEach((a,i)=>{if(query&&!a.slice(0,4).filter(Boolean).join(' ').toLowerCase().includes(query))return;found++;const item=document.createElement('div');item.className='item'+(opened===i?' open':'');const btn=document.createElement('button');btn.className='itembtn';const left=document.createElement('span'),label=document.createElement('strong'),sub=document.createElement('small');label.textContent=txt(a[0],a[1]||a[0]);sub.textContent=txt(a[1]||'英文名稱待確認',a[0]);left.append(label,sub);const arrow=document.createElement('span');arrow.className='chev';arrow.textContent='›';btn.append(left,arrow);btn.onclick=()=>{opened=opened===i?-1:i;drawItems()};item.append(btn);if(opened===i){const body=document.createElement('div');body.className='itembody';const p=document.createElement('p');p.textContent=txt(a[2],a[3]);body.append(p);const key=a[4];if(key&&supported[key]){const [min,max]=supported[key],line=document.createElement('div'),v=document.createElement('strong'),r=document.createElement('input');line.className='sliderline';const span=document.createElement('span');span.textContent=txt('調整數值','Value');v.textContent=settings[key]+(key==='count'?'':'%');line.append(span,v);r.type='range';r.min=min;r.max=max;r.value=settings[key];r.oninput=()=>{settings[key]=Number(r.value);v.textContent=r.value+(key==='count'?'':'%');$('activeSetting').textContent=a[0]+' · '+v.textContent;save()};body.append(line,r);const note=document.createElement('div');note.className='hint';note.textContent=txt('✓ 此項目會影響之後繪製的筆觸','✓ This affects new strokes');body.append(note)}else{const note=document.createElement('div');note.className='hint';note.textContent=txt('此項目目前提供說明，尚未模擬效果。','Explanation only; simulation not yet implemented.');body.append(note)}item.append(body)}list.append(item)});if(!found){const p=document.createElement('p');p.className='empty';p.textContent=txt('沒有符合的參數','No matching settings');list.append(p)}}
+function drawItems(){const list=$('items');list.replaceChildren();$('sectionTitle').textContent=names[category][lang==='zh'?0:1];$('sectionEn').textContent=names[category][1].toUpperCase();$('sectionDesc').textContent=txt('點開一項，依序看懂原理、差異、練習與常見誤解','Open a setting: principle, comparison, practice and common mistakes');let query=$('search').value.trim().toLowerCase();let found=0;groups[category].forEach((a,i)=>{if(query&&!a.slice(0,4).filter(Boolean).join(' ').toLowerCase().includes(query))return;found++;const item=document.createElement('div');item.className='item'+(opened===i?' open':'');const btn=document.createElement('button');btn.className='itembtn';btn.setAttribute('aria-expanded',opened===i);btn.setAttribute('aria-controls','lesson-'+category+'-'+i);const left=document.createElement('span'),label=document.createElement('strong'),sub=document.createElement('small');label.textContent=txt(a[0],a[1]||a[0]);sub.textContent=txt(a[1]||names[category][1],a[0]);left.append(label,sub);const arrow=document.createElement('span');arrow.className='chev';arrow.textContent='›';btn.append(left,arrow);btn.onclick=()=>{opened=opened===i?-1:i;drawItems()};item.append(btn);if(opened===i){const body=document.createElement('div');body.className='itembody';body.id='lesson-'+category+'-'+i;if(category===0)appendLesson(body,a[4]);else appendDetailedLesson(body,category,a);const key=a[4];if(key&&supported[key]){const [min,max]=supported[key],line=document.createElement('div'),v=document.createElement('strong'),r=document.createElement('input');line.className='sliderline';const span=document.createElement('span');span.textContent=txt('試畫調整・影響接下來的新筆畫','Preview value · new strokes');v.textContent=settings[key]+(key==='count'?'':'%');line.append(span,v);r.type='range';r.setAttribute('aria-label',txt(a[0],a[1]||a[0]));r.min=min;r.max=max;r.value=settings[key];r.oninput=()=>{settings[key]=Number(r.value);v.textContent=r.value+(key==='count'?'':'%');$('activeSetting').textContent=a[0]+' · '+v.textContent;save()};body.append(line,r);const note=document.createElement('div');note.className='hint';note.textContent=txt('✓ 此項目會影響之後繪製的筆觸','✓ This affects new strokes');body.append(note)}item.append(body)}list.append(item)});if(!found){const p=document.createElement('p');p.className='empty';p.textContent=txt('沒有符合的參數','No matching settings');list.append(p)}}
 function searchAll(){let q=$('search').value.trim().toLowerCase();if(q){const ix=groups.findIndex(g=>g.some(a=>a.slice(0,4).filter(Boolean).join(' ').toLowerCase().includes(q)));if(ix>=0)category=ix}opened=-1;drawCategories();drawItems()}
 function save(){try{localStorage.setItem('brushlab-side-v1',JSON.stringify({settings,color,size,lang,dark:document.body.classList.contains('dark')}))}catch{}}try{let s=JSON.parse(localStorage.getItem('brushlab-side-v1')||'{}');settings={...defaults,...s.settings};color=s.color||color;size=s.size||size;lang=s.lang==='en'?'en':'zh';if(s.dark)document.body.classList.add('dark')}catch{}
 function point(e){let r=canvas.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top,p:e.pressure||.5,t:performance.now()}}
-function stamp(x,y,sz,opacity,s,random){ctx.save();ctx.globalAlpha=Math.max(.03,Math.min(1,opacity));ctx.fillStyle=s.color;ctx.translate(x,y);ctx.rotate((random()-.5)*s.settings.scatter/100*Math.PI*2);ctx.beginPath();ctx.ellipse(0,0,Math.max(0.5,sz/2),Math.max(0.5,sz/2),0,0,Math.PI*2);ctx.fill();ctx.restore()}
+function stamp(x,y,sz,opacity,s,random){ctx.save();ctx.globalAlpha=Math.max(0,Math.min(1,opacity));ctx.fillStyle=s.color;ctx.translate(x,y);ctx.rotate((random()-.5)*s.settings.scatter/100*Math.PI*2);ctx.beginPath();ctx.ellipse(0,0,Math.max(0.5,sz/2),Math.max(0.5,sz/2),0,0,Math.PI*2);ctx.fill();ctx.restore()}
 function randomizer(seed){return()=>{seed=(Math.imul(1664525,seed)+1013904223)>>>0;return seed/4294967296}}
-function stroke(s){const pts=s.points,random=randomizer(s.seed),cfg=s.settings;if(!pts.length)return;let step=Math.max(1.5,s.size*(.08+cfg.spacing/100*.95)),distance=0,idx=0;const mark=(x,y,p,speed)=>{let count=Math.max(1,Math.round(cfg.count*(1-random()*cfg.countJitter/100)));for(let k=0;k<count;k++){let sz=s.size*(.75+p*.5)*(1+(random()-.5)*cfg.sizeJitter/100*1.7);sz*=Math.max(.15,1+cfg.speedSize/100*Math.min(1,speed));let opacity=(1-random()*cfg.opacityJitter/100)*Math.max(.1,1+cfg.speedOpacity/100*Math.min(1,speed));opacity*=Math.max(0,1-idx*cfg.falloff/5000);stamp(x,y,sz,opacity,s,random);idx++}};mark(pts[0].x,pts[0].y,pts[0].p,0);for(let i=1;i<pts.length;i++){const a=pts[i-1],b=pts[i],dx=b.x-a.x,dy=b.y-a.y,len=Math.hypot(dx,dy);if(len<.01)continue;let angle=Math.atan2(dy,dx),speed=len/Math.max(1,b.t-a.t);distance+=len;for(let at=step;at<=len;at+=Math.max(1.5,step*(1+(random()-.5)*cfg.spacingJitter/100))){let t=at/len,x=a.x+dx*t,y=a.y+dy*t;x+=(random()-.5)*s.size*cfg.lateral/100*2;y+=(random()-.5)*s.size*cfg.lateral/100*2;let offset=(random()-.5)*s.size*cfg.linear/100;x+=Math.cos(angle)*offset;y+=Math.sin(angle)*offset;mark(x,y,a.p+(b.p-a.p)*t,speed)}}}
-function repaint(){let w=canvas.width/dpr,h=canvas.height/dpr;ctx.clearRect(0,0,w,h);ctx.fillStyle='#fffdf9';ctx.fillRect(0,0,w,h);strokes.forEach(stroke);if(current)stroke(current)}function resize(){const r=canvas.getBoundingClientRect();if(!r.width||!r.height)return;dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.round(r.width*dpr);canvas.height=Math.round(r.height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);repaint()}
-canvas.addEventListener('pointerdown',e=>{if(e.button!==0)return;canvas.setPointerCapture(e.pointerId);current={points:[point(e)],settings:{...settings},size,color,seed:Math.floor(Math.random()*4294967295)};repaint()});canvas.addEventListener('pointermove',e=>{if(!current)return;current.points.push(point(e));repaint()});function finish(){if(!current)return;strokes.push(current);current=null;undone=[];repaint()}canvas.addEventListener('pointerup',finish);canvas.addEventListener('pointercancel',finish);
+function speedFactor(value,speed){const amount=value/100,n=Math.min(1,speed);return amount>=0?1-amount*n:1+amount*(1-n)}
+function stroke(s){
+ const pts=s.points,cfg=s.settings,random=randomizer(s.seed);if(!pts.length)return;
+ let distance=0,next=0;
+ function mark(x,y,p,speed,angle){
+  const count=Math.max(1,Math.round(cfg.count*(1-random()*cfg.countJitter/100)));
+  for(let k=0;k<count;k++){
+   const side=(random()-.5)*s.size*cfg.lateral/100*2,along=(random()-.5)*s.size*cfg.linear/100*2;
+   let sz=s.size*(.75+p*.5)*(1+(random()-.5)*cfg.sizeJitter/100*1.7);
+   sz*=Math.max(.15,speedFactor(cfg.speedSize,speed));
+   const fade=cfg.falloff?Math.max(0,1-distance/(s.size*100/cfg.falloff*12)):1;
+   const opacity=(1-random()*cfg.opacityJitter/100)*Math.max(.1,speedFactor(cfg.speedOpacity,speed))*fade;
+   stamp(x-Math.sin(angle)*side+Math.cos(angle)*along,y+Math.cos(angle)*side+Math.sin(angle)*along,sz,opacity,s,random);
+  }
+ }
+ mark(pts[0].x,pts[0].y,pts[0].p,0,0);
+ function interval(speed){return Math.max(.5,s.size*Math.max(.01,cfg.spacing/100)*(1+(random()-.5)*cfg.spacingJitter/100*1.8)*Math.max(.1,1+cfg.speedSpacing/100*Math.min(1,speed)))}
+ next=interval(0);
+ for(let i=1;i<pts.length;i++){
+  const a=pts[i-1],b=pts[i],dx=b.x-a.x,dy=b.y-a.y,len=Math.hypot(dx,dy);if(!len)continue;
+  const speed=len/Math.max(1,b.t-a.t),angle=Math.atan2(dy,dx);
+  while(next<=distance+len){const t=(next-distance)/len;const previous=distance;distance=next;mark(a.x+dx*t,a.y+dy*t,a.p+(b.p-a.p)*t,speed,angle);distance=previous;next+=interval(speed)}
+  distance+=len;
+ }
+}
+let resizeFramePending=false;function scheduleResize(){if(resizeFramePending)return;resizeFramePending=true;requestAnimationFrame(()=>{resizeFramePending=false;resize()})}
+function repaint(){let w=canvas.width/dpr,h=canvas.height/dpr;ctx.clearRect(0,0,w,h);ctx.fillStyle='#fffdf9';ctx.fillRect(0,0,w,h);strokes.forEach(stroke);if(current)stroke(current)}function resize(){const r=$('canvasStage').getBoundingClientRect();if(!previewOpen||!r.width||!r.height)return;if(canvas.width===Math.round(r.width*Math.min(devicePixelRatio||1,2))&&canvas.height===Math.round(r.height*Math.min(devicePixelRatio||1,2)))return;dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.round(r.width*dpr);canvas.height=Math.round(r.height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);repaint()}
+canvas.addEventListener('pointerdown',e=>{if(e.button!==0||current)return;canvas.setPointerCapture(e.pointerId);current={points:[point(e)],settings:{...settings},size,color,seed:Math.floor(Math.random()*4294967295),pointerId:e.pointerId};repaint()});canvas.addEventListener('pointermove',e=>{if(!current||e.pointerId!==current.pointerId)return;const events=e.getCoalescedEvents?e.getCoalescedEvents():[e];for(const event of events.length?events:[e]){let p=point(event),last=current.points.at(-1),factor=1-current.settings.streamline/100*.9;p.x=last.x+(p.x-last.x)*factor;p.y=last.y+(p.y-last.y)*factor;current.points.push(p)}repaint()});function finish(){if(!current)return;strokes.push(current);current=null;undone=[];repaint()}function finishPointer(e){if(current&&current.pointerId===e.pointerId)finish()}canvas.addEventListener('pointerup',finishPointer);canvas.addEventListener('pointercancel',finishPointer);canvas.addEventListener('lostpointercapture',finishPointer);
 $('undo').onclick=()=>{if(strokes.length)undone.push(strokes.pop());repaint()};$('redo').onclick=()=>{if(undone.length)strokes.push(undone.pop());repaint()};$('clear').onclick=()=>{strokes=[];undone=[];repaint()};$('color').value=color;$('color').oninput=e=>{color=e.target.value;save()};$('size').value=size;$('sizeValue').textContent=size;$('size').oninput=e=>{size=Number(e.target.value);$('sizeValue').textContent=size;save()};function exportPNG(){const a=document.createElement('a');a.href=canvas.toDataURL('image/png');a.download='brush-lab.png';a.click()}$('export').onclick=exportPNG;$('exportMobile').onclick=exportPNG;
-function toggleTheme(){document.body.classList.toggle('dark');save()}function toggleLang(){lang=lang==='zh'?'en':'zh';drawCategories();drawItems();renderPresets();save()}$('theme').onclick=toggleTheme;$('mobileTheme').onclick=toggleTheme;$('lang').onclick=toggleLang;$('mobileLang').onclick=toggleLang;$('search').oninput=searchAll;
-function renderPresets(){const box=$('presets');box.replaceChildren();presets.forEach(p=>{const b=document.createElement('button');b.className='preset';b.textContent=p[2]+' '+p[lang==='zh'?0:1];b.onclick=()=>{settings={...defaults,...p[3]};category=0;opened=-1;drawCategories();drawItems();$('activeSetting').textContent=txt('已套用：','Applied: ')+p[lang==='zh'?0:1];save()};box.append(b)})}drawCategories();drawItems();renderPresets();requestAnimationFrame(resize);window.addEventListener('resize',resize);if(typeof ResizeObserver!=='undefined')new ResizeObserver(resize).observe(canvas);
+function toggleTheme(){document.body.classList.toggle('dark');save()}function toggleLang(){lang=lang==='zh'?'en':'zh';drawCategories();drawItems();renderPresets();updatePreview();save()}$('theme').onclick=toggleTheme;$('mobileTheme').onclick=toggleTheme;$('lang').onclick=toggleLang;$('mobileLang').onclick=toggleLang;$('search').oninput=searchAll;
+function renderPresets(){const box=$('presets');box.replaceChildren();presets.forEach(p=>{const b=document.createElement('button');b.className='preset';b.textContent=p[2]+' '+p[lang==='zh'?0:1];b.onclick=()=>{settings={...defaults,...p[3]};category=0;opened=-1;drawCategories();drawItems();$('activeSetting').textContent=txt('已套用：','Applied: ')+p[lang==='zh'?0:1];save()};box.append(b)})}drawCategories();drawItems();renderPresets();updatePreview();requestAnimationFrame(resize);window.addEventListener('resize',scheduleResize);if(typeof ResizeObserver!=='undefined')new ResizeObserver(scheduleResize).observe($('canvasStage'));
 </script></body></html>
