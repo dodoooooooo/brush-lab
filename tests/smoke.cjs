@@ -21,7 +21,7 @@ class Element{
 }
 let log=[];const ctx={globalAlpha:1,fillStyle:'',save(){},restore(){},translate(x,y){log.push(['xy',x,y,this.globalAlpha])},rotate(){},beginPath(){},ellipse(x,y,rx,ry){log.push(['size',rx,ry])},fill(){},clearRect(){log=[]},fillRect(){},setTransform(){}};
 const nodes=new Map();for(const [,id]of html.matchAll(/id="([^"]+)"/g))nodes.set(id,new Element(id==='canvas'?'canvas':'div'));
-const raf=[];const sandbox={console,performance:{now:()=>100},devicePixelRatio:1,matchMedia:()=>({matches:true}),localStorage:{getItem:()=>null,setItem(){}},requestAnimationFrame:fn=>raf.push(fn),window:{addEventListener(){}},document:{getElementById:id=>nodes.get(id),createElement:tag=>new Element(tag),createElementNS:(ns,tag)=>new Element(tag),createTextNode:s=>({textContent:s}),body:new Element('body')}};
+const raf=[];const sandbox={console,performance:{now:()=>100},devicePixelRatio:1,matchMedia:query=>({matches:query.includes('max-width')}),localStorage:{getItem:()=>null,setItem(){}},requestAnimationFrame:fn=>raf.push(fn),window:{addEventListener(){}},document:{getElementById:id=>nodes.get(id),createElement:tag=>new Element(tag),createElementNS:(ns,tag)=>new Element(tag),createTextNode:s=>({textContent:s}),body:new Element('body')}};
 vm.createContext(sandbox);vm.runInContext(script,sandbox);const run=s=>vm.runInContext(s,sandbox),$=id=>nodes.get(id);
 assert.equal($('categories').children.length,14);assert.equal($('previewToggle').getAttribute('aria-expanded'),'false');
 let total=0,diagrams=0;
@@ -39,6 +39,8 @@ for(let c=0;c<14;c++){
  assert.equal($('previewToggle').getAttribute('aria-expanded'),'false');
 }
 assert.equal(total,141);
+assert.equal($('appShell').classList.contains('previewCollapsed'),true);assert.ok($('previewState').textContent.includes('▴'));
+sandbox.matchMedia=()=>({matches:true});run('updatePreview()');assert.ok($('previewState').textContent.includes('◂'));sandbox.matchMedia=query=>({matches:query.includes('max-width')});run('updatePreview()');
 // Repeated collapse must leave the drawing state and backing canvas unchanged.
 $('previewToggle').click();while(raf.length)raf.shift()();
 const canvas=$('canvas');canvas.listeners.pointerdown({button:0,pointerId:1,clientX:10,clientY:40,pressure:.5});canvas.listeners.pointermove({pointerId:1,clientX:250,clientY:70,pressure:.5});canvas.listeners.pointerup({pointerId:1});
