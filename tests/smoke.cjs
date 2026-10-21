@@ -3,6 +3,7 @@ const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/st
 const html=fs.readFileSync(require('node:path').join(__dirname,'../index.html'),'utf8');
 const script=html.split('<script>')[1].split('</script>')[0];new Function(script);
 assert.ok(!html.includes('此項目目前提供說明，尚未模擬效果。'));
+assert.ok(html.includes("observe($('canvasStage'))"));assert.ok(!html.includes('observe(canvas)'));assert.ok(html.includes('#canvas{position:absolute;inset:0;')); 
 class Element{
  constructor(tag='div'){this.tagName=tag;this.children=[];this.attributes={};this.style={};this.listeners={};this.value='';this.width=320;this.height=240;this.checked=false;this.className='';this.textContent='';this.classList={add:n=>{this.className+=' '+n},remove:n=>{this.className=this.className.split(' ').filter(x=>x!==n).join(' ')},contains:n=>this.className.split(' ').includes(n),toggle:(n,v)=>{v=v??!this.classList.contains(n);v?this.classList.add(n):this.classList.remove(n)}}}
  append(...nodes){this.children.push(...nodes)}
@@ -41,7 +42,7 @@ assert.equal(total,141);
 // Repeated collapse must leave the drawing state and backing canvas unchanged.
 $('previewToggle').click();while(raf.length)raf.shift()();
 const canvas=$('canvas');canvas.listeners.pointerdown({button:0,pointerId:1,clientX:10,clientY:40,pressure:.5});canvas.listeners.pointermove({pointerId:1,clientX:250,clientY:70,pressure:.5});canvas.listeners.pointerup({pointerId:1});
-assert.equal(run('strokes.length'),1);let stored=run('JSON.stringify(strokes)');const width=canvas.width,height=canvas.height;
+assert.equal(run('strokes.length'),1);let stored=run('JSON.stringify(strokes)');const width=canvas.width,height=canvas.height;for(let i=0;i<50;i++){run('scheduleResize();scheduleResize()');while(raf.length)raf.shift()();assert.equal(canvas.width,width);assert.equal(canvas.height,height)}
 $('previewToggle').click();run('resize()');$('previewToggle').click();while(raf.length)raf.shift()();assert.equal(run('JSON.stringify(strokes)'),stored);assert.equal(canvas.width,width);assert.equal(canvas.height,height);
 $('undo').click();assert.equal(run('strokes.length'),0);$('redo').click();assert.equal(run('strokes.length'),1);
 $('search').value='稀釋';$('search').oninput();assert.equal(run('category'),6);assert.equal($('items').children.length,1);
